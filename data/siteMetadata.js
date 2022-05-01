@@ -4,19 +4,19 @@ const siteMetadata = {
   headerTitle: '@jamescardona11',
   description: 'LOREM LOREM',
   language: 'es-co',
-  theme: 'dark', // system, dark or light
+  theme: 'system', // system, dark or light
   siteUrl: 'https://tailwind-nextjs-starter-blog.vercel.app',
   siteRepo: 'https://github.com/timlrx/tailwind-nextjs-starter-blog',
   siteLogo: '/static/images/logo.png',
   image: '/static/images/avatar.png',
   socialBanner: '/static/images/twitter-card.png',
-  email: 'address@yoursite.com',
-  github: 'https://github.com',
+  email: '',
+  github: 'https://github.com/jamescardona11',
   twitter: 'https://twitter.com/Twitter',
-  facebook: 'https://facebook.com',
-  youtube: 'https://youtube.com',
-  linkedin: 'https://www.linkedin.com',
-  locale: 'en-US',
+  facebook: '',
+  youtube: 'https://www.youtube.com/channel/UCoDHYabD2zNtMn17x2wu50Q',
+  linkedin: 'https://www.linkedin.com/me/jamescardona11',
+  locale: 'es-co',
   analytics: {
     // If you want to use an analytics provider you have to add it to the
     // content security policy in the `next.config.js` file.
