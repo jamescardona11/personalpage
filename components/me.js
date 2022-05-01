@@ -14,7 +14,7 @@ const data = {
 
 const Me = () => {
   return (
-    <SectionContainer>
+    <div>
       <div className="flex flex-col-reverse items-start sm:flex-row">
         <div className="flex flex-col pr-8">
           <h1 className="mb-1 text-3xl font-bold tracking-tight text-black dark:text-white md:text-5xl">
@@ -47,7 +47,7 @@ const Me = () => {
         </svg>
         <span>Download CV</span>
       </button>
-    </SectionContainer>
+    </div>
   )
 }
 

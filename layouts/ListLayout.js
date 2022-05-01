@@ -1,6 +1,5 @@
 import Link from '@/components/Link'
 import Tag from '@/components/Tag'
-import siteMetadata from '@/data/siteMetadata'
 import { useState } from 'react'
 import Pagination from '@/components/Pagination'
 import formatDate from '@/lib/utils/formatDate'
@@ -23,6 +22,10 @@ export default function ListLayout({ posts, title, initialDisplayPosts = [], pag
           <h1 className="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
             {title}
           </h1>
+          <p className="text-sm text-gray-700 dark:text-gray-400">
+            Esté blog es un reto personal, la verdad no me considero experto en ninguna de las temas
+            que voy a tratar acá. Lo que sé es que voy a colocar mucho amor que sean posts de valor.
+          </p>
           <div className="relative max-w-lg">
             <input
               aria-label="Search articles"
