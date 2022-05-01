@@ -23,6 +23,17 @@ I'm a software engineer at [57Blocks][work] in Medellin, CO 🌆
 - 📚 I have a new blog hobbie
 - ⚡ Fun fact: I like to play poker ♠️
 
+### Skills
+
+- Flutter ✦✦✦✦✦
+- Android ✦✦✦
+- Nodejs ✦✦✦
+- python ✦✦✦
+- web3 ✦✦✦
+- Solidity ✦✦
+- Clojure ✦✦
+- Next.js ✦
+
 ### Github Stats
 
 [![me](https://github-readme-stats.vercel.app/api?username=jamescardona11&count_private=true&theme=default&show_icons=true)](https://github.com/jamescardona11)

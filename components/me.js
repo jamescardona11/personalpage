@@ -3,7 +3,7 @@ import Image from '@/components/Image'
 import SectionContainer from './SectionContainer'
 
 const data = {
-  profileImage: '/static/images/avatar.png',
+  profileImage: '/static/images/avatar.jpg',
   name: 'James Cardona',
   role: 'Software Engineer | ',
   aboutme:
