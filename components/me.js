@@ -20,7 +20,7 @@ const Me = () => {
           <h1 className="mb-1 text-3xl font-bold tracking-tight text-black dark:text-white md:text-5xl">
             {data.name}
           </h1>
-          <h2 className="mb-4 text-primary-500 dark:text-primary-500">
+          <h2 className="mb-4 text-gray-900 dark:text-white">
             {data.role} <span className="font-semibold">57Blocks</span>
           </h2>
           <p className="text-gray-800 dark:text-gray-200">{data.aboutme}</p>
@@ -37,13 +37,13 @@ const Me = () => {
           />
         </div>
       </div>
-      <div className="flex justify-end text-base font-medium leading-6">
+      <div className="flex text-base font-medium leading-6">
         <Link
           href="https://www.dropbox.com/s/69l2vuo9ebjtly2/profile_us.pdf?dl=0"
           className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
           aria-label="all posts"
         >
-          Descargar CV;
+          Descargar CV
         </Link>
       </div>
       {/* <button className="mt-3 mb-16 inline-flex items-center rounded bg-primary-600 py-3 px-6 font-bold text-white hover:bg-primary-800">

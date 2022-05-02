@@ -1,5 +1,5 @@
 ---
-name: Tails Azimuth
+name: James Cardona
 date: ''
 ---
 
@@ -12,6 +12,8 @@ date: ''
 ### About me
 
 I'm a software engineer at [57Blocks][work] in Medellin, CO 🌆
+
+Download my profile in PDF: [Profile][cv]
 
 - 🔭 I’m currently working on [argo][argo] & [moncli][moncli]
 - 🙊 I start a new open source organization [TKMonkey][tkmonkey]
@@ -45,5 +47,4 @@ I'm a software engineer at [57Blocks][work] in Medellin, CO 🌆
 [tkmonkey]: https://github.com/TKMonkey
 [flutter]: https://flutter.dev
 [linkedin]: https://linkedin.com/in/jamescardona11
-[devto]: https://dev.to/jamescardona11
-[hashnode]: https://jamescardona11.hashnode.dev
+[cv]: https://www.dropbox.com/s/69l2vuo9ebjtly2/profile_us.pdf?dl=0
