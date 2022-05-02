@@ -5,9 +5,10 @@ import { BlogSEO } from '@/components/SEO'
 import siteMetadata from '@/data/siteMetadata'
 import formatDate from '@/lib/utils/formatDate'
 import ScrollTopAndComment from '@/components/ScrollTopAndComment'
+import Tag from '@/components/Tag'
 
 export default function PostLayout({ frontMatter, next, prev, children }) {
-  const { date, title } = frontMatter
+  const { date, title, tags } = frontMatter
 
   return (
     <SectionContainer>
@@ -16,17 +17,22 @@ export default function PostLayout({ frontMatter, next, prev, children }) {
       <article>
         <div>
           <header>
-            <div className="space-y-1 border-b border-gray-200 pb-10 text-center dark:border-gray-700">
-              <dl>
-                <div>
-                  <dt className="sr-only">Published on</dt>
-                  <dd className="text-base font-medium leading-6 text-gray-500 dark:text-gray-400">
-                    <time dateTime={date}>{formatDate(date)}</time>
-                  </dd>
-                </div>
-              </dl>
+            <div className="flex space-y-1 border-b border-gray-200 pb-10 text-center dark:border-gray-700">
               <div>
                 <PageTitle>{title}</PageTitle>
+                <div className="mb-1 flex flex-wrap">
+                  {tags.map((tag) => (
+                    <Tag key={tag} text={tag} />
+                  ))}
+                </div>
+                <dl>
+                  <div>
+                    <dt className="sr-only">Published on</dt>
+                    <dd className="flex text-base font-medium leading-6 text-gray-500 dark:text-gray-400">
+                      <time dateTime={date}>{formatDate(date)}</time>
+                    </dd>
+                  </div>
+                </dl>
               </div>
             </div>
           </header>

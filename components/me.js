@@ -1,5 +1,5 @@
 import Image from '@/components/Image'
-// import Link from '@/components/Link'
+import Link from '@/components/Link'
 import SectionContainer from './SectionContainer'
 
 const data = {
@@ -36,6 +36,15 @@ const Me = () => {
             className="rounded-full grayscale filter"
           />
         </div>
+      </div>
+      <div className="flex justify-end text-base font-medium leading-6">
+        <Link
+          href="https://www.dropbox.com/s/69l2vuo9ebjtly2/profile_us.pdf?dl=0"
+          className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
+          aria-label="all posts"
+        >
+          Descargar CV;
+        </Link>
       </div>
       {/* <button className="mt-3 mb-16 inline-flex items-center rounded bg-primary-600 py-3 px-6 font-bold text-white hover:bg-primary-800">
         <svg

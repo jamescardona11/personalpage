@@ -1,7 +1,8 @@
 import Image from './Image'
 import Link from './Link'
+import Tag from '@/components/Tag'
 
-const Card = ({ title, description, imgSrc, href }) => (
+const Card = ({ title, description, imgSrc, href, tags }) => (
   <div className="md p-4 md:w-1/2" style={{ maxWidth: '544px' }}>
     <div
       className={`${
@@ -29,7 +30,7 @@ const Card = ({ title, description, imgSrc, href }) => (
           />
         ))}
       <div className="p-6">
-        <h2 className="mb-3 text-2xl font-bold leading-8 tracking-tight">
+        <h2 className="mb-1 text-2xl font-bold leading-8 tracking-tight">
           {href ? (
             <Link href={href} aria-label={`Link to ${title}`}>
               {title}
@@ -38,6 +39,11 @@ const Card = ({ title, description, imgSrc, href }) => (
             title
           )}
         </h2>
+        <div className="mb-3 flex flex-wrap">
+          {tags.map((tag) => (
+            <Tag key={tag} text={tag} />
+          ))}
+        </div>
         <p className="prose mb-3 max-w-none text-gray-500 dark:text-gray-400">{description}</p>
         {href && (
           <Link
@@ -45,7 +51,7 @@ const Card = ({ title, description, imgSrc, href }) => (
             className="text-base font-medium leading-6 text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
             aria-label={`Link to ${title}`}
           >
-            Learn more &rarr;
+            Ver proyecto &rarr;
           </Link>
         )}
       </div>
