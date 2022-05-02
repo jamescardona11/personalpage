@@ -41,7 +41,7 @@ const Card = ({ title, description, imgSrc, href, tags }) => (
         </h2>
         <div className="mb-3 flex flex-wrap">
           {tags.map((tag) => (
-            <Tag key={tag} text={tag} />
+            <Tag key={tag} text={tag} isEnable="false" />
           ))}
         </div>
         <p className="prose mb-3 max-w-none text-gray-500 dark:text-gray-400">{description}</p>
