@@ -15,7 +15,7 @@ const siteMetadata = {
   twitter: 'https://twitter.com/Twitter',
   facebook: '',
   youtube: 'https://www.youtube.com/channel/UCoDHYabD2zNtMn17x2wu50Q',
-  linkedin: 'https://www.linkedin.com/me/jamescardona11',
+  linkedin: 'https://www.linkedin.com/in/jamescardona11',
   locale: 'es-co',
   analytics: {
     // If you want to use an analytics provider you have to add it to the

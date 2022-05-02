@@ -9,7 +9,6 @@ export async function getStaticProps() {
   return { props: { projects } }
 }
 export default function Projects({ projects }) {
-  console.log(projects)
   return (
     <>
       <PageSEO

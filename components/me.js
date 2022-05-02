@@ -1,6 +1,5 @@
 import Image from '@/components/Image'
 import Link from '@/components/Link'
-import SectionContainer from './SectionContainer'
 
 const data = {
   profileImage: '/static/images/avatar.jpg',
@@ -25,7 +24,7 @@ const Me = () => {
           </h2>
           <p className="text-gray-800 dark:text-gray-200">{data.aboutme}</p>
           {/* <p className="text-sm text-gray-700 dark:text-gray-400">{data.toppics2}</p> */}
-          <p className="text-sm text-gray-700 dark:text-gray-400">{data.toppics1}</p>
+          {/* <p className="text-sm text-gray-700 dark:text-gray-400">{data.toppics1}</p> */}
         </div>
         <div className="relative mb-8 mr-auto w-[80px] sm:mb-0 sm:w-[176px]">
           <Image
@@ -37,11 +36,11 @@ const Me = () => {
           />
         </div>
       </div>
-      <div className="flex text-base font-medium leading-6">
+      <div className="flex text-base text-sm leading-6">
         <Link
           href="https://www.dropbox.com/s/69l2vuo9ebjtly2/profile_us.pdf?dl=0"
           className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
-          aria-label="all posts"
+          aria-label="download cv"
         >
           Descargar CV
         </Link>
