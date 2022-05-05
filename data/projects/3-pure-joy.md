@@ -1,7 +1,7 @@
 ---
 title: PureJoy
 tags: ['professional-project']
-description: 'In this article we introduce adding images in the tailwind starter blog and the benefits and limitations of the next/image component.'
+description: 'Proyecto realizado con flutter, para llevar procesos de salud metal por medio de una aplicación'
 imgSrc: '/static/images/projects/pure_joy.png'
-href: 'https://www.google.com'
+href: 'https://play.google.com/store/apps/details?id=com.kelseyjpatel.the_pure_joy'
 ---

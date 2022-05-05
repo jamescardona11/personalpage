@@ -23,8 +23,9 @@ export default function ListLayout({ posts, title, initialDisplayPosts = [], pag
             {title}
           </h1>
           <p className="text-sm text-gray-700 dark:text-gray-400">
-            Esté blog es un reto personal, la verdad no me considero experto en ninguna de las temas
-            que voy a tratar acá. Lo que sé es que voy a colocar mucho amor que sean posts de valor.
+            Esté blog, es un reto personal, la verdad no me considero experto en ninguna de los
+            temas que voy a tratar acá. Lo que sé es que voy a colocar mucho amor, que sean posts de
+            valor.
           </p>
           <div className="relative max-w-lg">
             <input

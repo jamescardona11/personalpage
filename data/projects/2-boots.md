@@ -1,7 +1,7 @@
 ---
 title: Boots - Codefi
 tags: ['professional-project']
-description: 'In this article we introduce adding images in the tailwind starter blog and the benefits and limitations of the next/image component.'
+description: 'App en flutter, puedes asegurar la revisión de casas según la política de USA'
 imgSrc: '/static/images/projects/boots.png'
-href: 'https://www.google.com'
+href: 'https://apps.apple.com/us/app/id1547371232'
 ---

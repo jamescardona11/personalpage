@@ -1,7 +1,7 @@
 ---
-title: Tolling Switch
+title: Rolling Switch
 tags: ['library']
-description: 'In this article we introduce adding images in the tailwind starter blog and the benefits and limitations of the next/image component.'
+description: 'Botón de cambio personalizado con una animación atractiva, hecho para permitirle personalizar colores, íconos y más.'
 imgSrc: '/static/images/projects/rolling_switch.png'
-href: 'https://www.google.com'
+href: 'https://pub.dev/packages/rolling_switch'
 ---

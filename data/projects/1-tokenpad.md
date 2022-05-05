@@ -1,7 +1,7 @@
 ---
 title: Tokenpad
 tags: ['professional-project']
-description: 'In this article we introduce adding images in the tailwind starter blog and the benefits and limitations of the next/image component.'
+description: 'Aplicación realizada con flutter, para llevar el control de tu cartera cripto y los protocolos DEFI'
 imgSrc: '/static/images/projects/tokenpad.png'
-href: 'https://www.google.com'
+href: 'https://apps.apple.com/tt/app/tokenpad-defi-crypto-tracker/id1611304976'
 ---

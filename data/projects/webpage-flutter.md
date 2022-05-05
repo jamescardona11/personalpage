@@ -1,7 +1,7 @@
 ---
 title: Base web page Flutter
 tags: ['personal-project']
-description: 'In this article we introduce adding images in the tailwind starter blog and the benefits and limitations of the next/image component.'
+description: 'Aplicación web base en flutter para iniciar un proyecto nuevo, de mucha utilidad para iniciar una landing page'
 imgSrc: '/static/images/projects/personal_project.png'
-href: 'https://www.google.com'
+href: 'https://github.com/jamescardona11/base_web_landing'
 ---
