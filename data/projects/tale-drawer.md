@@ -1,7 +1,6 @@
 ---
-title: Images in Next.js
-tags: ['personal-project']
+title: Tale Drawer
+tags: ['library']
 description: 'In this article we introduce adding images in the tailwind starter blog and the benefits and limitations of the next/image component.'
-imgSrc: '/static/images/google.png'
-href: 'https://www.google.com'
+imgSrc: '/static/images/projects/tale_drawer.png'
 ---

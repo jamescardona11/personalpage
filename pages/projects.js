@@ -1,11 +1,10 @@
 import siteMetadata from '@/data/siteMetadata'
 import Card from '@/components/Card'
 import { PageSEO } from '@/components/SEO'
-import { getAllFilesFrontMatter } from '@/lib/mdx'
+import { getAllProjectsFrontMatter } from '@/lib/mdx'
 
 export async function getStaticProps() {
-  const projects = await getAllFilesFrontMatter('projects')
-
+  const projects = await getAllProjectsFrontMatter()
   return { props: { projects } }
 }
 export default function Projects({ projects }) {
@@ -21,7 +20,7 @@ export default function Projects({ projects }) {
             Proyectos
           </h1>
           <p className="text-lg leading-7 text-gray-500 dark:text-gray-400">
-            Algunos de las cosas que he realizado para aprender y crecer mi portafolio.
+            Algunos de estos proyectos los he realizado para aprender y crecer mi portafolio.
           </p>
         </div>
         <div className="container py-12">
