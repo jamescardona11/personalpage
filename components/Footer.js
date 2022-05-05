@@ -8,11 +8,7 @@ export default function Footer() {
     <footer>
       <div className="mt-16 flex flex-col items-start ">
         <div className="mb-3 flex flex-wrap">
-          <Link
-            href={siteMetadata.github}
-            className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
-            aria-label="download cv"
-          >
+          <Link href={siteMetadata.github} aria-label="github">
             <>
               <Image
                 alt="github James Cardona"
@@ -24,18 +20,14 @@ export default function Footer() {
             </>
           </Link>
           <div className="mr-2 ml-2" />
-          <Link
-            href={siteMetadata.linkedin}
-            className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
-            aria-label="download cv"
-          >
+          <Link href={siteMetadata.linkedin} aria-label="linkedin">
             <>
               <Image
                 alt="linkedin James Cardona"
                 height={30}
                 width={30}
                 src="/static/icons/linkedin.svg"
-                className="fill-current text-gray-700 hover:text-blue-500 dark:text-gray-200 dark:hover:text-blue-400"
+                className="fill-white"
               />
             </>
           </Link>
