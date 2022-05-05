@@ -7,7 +7,7 @@ const data = {
   role: 'Software Engineer | ',
   aboutme:
     'Tech Explorer | Apasionado por la tecnología, videojuegos y un entusiasta del mundo Cripto y NFTs.',
-  toppics1: '#fluter, #python, #nodejs, #web3, #solidity, #clojure y #next.js.',
+  toppics1: '#fluter, #python, #nodejs, #web3, #solidity, #clojure <3 y #next.js.',
   toppics2: 'Creando aplicaciones, emprendiendo y aprendiendo.',
 }
 
