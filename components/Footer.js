@@ -31,6 +31,18 @@ export default function Footer() {
               />
             </>
           </Link>
+          <div className="mr-2 ml-2" />
+          <Link href={siteMetadata.notion} aria-label="linkedin">
+            <>
+              <Image
+                alt="notion James Cardona"
+                height={30}
+                width={30}
+                src="/static/icons/notion.svg"
+                className="fill-white"
+              />
+            </>
+          </Link>
         </div>
         <div className="mb-2 flex space-x-2 text-sm text-gray-500 dark:text-gray-400">
           <div>{siteMetadata.author}</div>

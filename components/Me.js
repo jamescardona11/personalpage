@@ -1,5 +1,6 @@
 import Image from '@/components/Image'
 import Link from '@/components/Link'
+import siteMetadata from '@/data/siteMetadata'
 
 const data = {
   profileImage: '/static/images/avatar.jpg',
@@ -38,7 +39,7 @@ const Me = () => {
       </div>
       <div className="flex text-base text-sm leading-6">
         <Link
-          href="https://www.dropbox.com/s/69l2vuo9ebjtly2/profile_us.pdf?dl=0"
+          href={siteMetadata.notion}
           className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
           aria-label="download cv"
         >

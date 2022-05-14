@@ -14,6 +14,7 @@ const siteMetadata = {
   github: 'https://github.com/jamescardona11',
   twitter: 'https://twitter.com/Twitter',
   facebook: '',
+  notion: 'https://www.dropbox.com/s/69l2vuo9ebjtly2/profile_us.pdf?dl=0',
   youtube: 'https://www.youtube.com/channel/UCoDHYabD2zNtMn17x2wu50Q',
   linkedin: 'https://www.linkedin.com/in/jamescardona11',
   locale: 'es-co',
