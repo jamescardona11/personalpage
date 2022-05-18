@@ -1,35 +1,44 @@
 ---
-title: Git para principiantes.
+title: Git para principiantes. Parte 1
 date: 2022-5-13
-tags: ['git', 'github', 'basic']
-draft: true
+tags: ['git', 'git-serie', 'basic']
+draft: false
 summary: Las extensiones son una gran forma de realizar el trabajo más fácil y rápido. Pueden ser el complemento ideal para tener ayudas visuales o reducir el proceso de desarrollo.
 ---
 
 # GIT
 
 La idea principal es aprender de git más allá de lo que sé ahora.
+Quiero recordarme que lo básico en muchos casos es mejor. Git es la base para el trabajo distribuido vamos a lo básico y aprendamos algo que es para toda la vida.
 
-### Content
+### Contenido
 
-- Basic
--
+- GIT
+  - [¿Qué es Git?](#-qu--es-git-)
+  - [¿Cómo funciona?](#-c-mo-funciona-)
+  - [Usos de GIT](#usos-de-git)
+  - [Vamos a iniciar con cosas básicas](#vamos-a-iniciar-con-cosas-b-sicas)
+  - [Comandos básicos](#comandos-b-sicos)
+  - [Git branches](#git-branches)
+  - [Git branches - Comandos básicos](#git-branches---comandos-b-sicos)
+  - [Git trabajo remoto](#git-trabajo-remoto)
+  - [Practiquemos lo aprendido](#practiquemos-lo-aprendido)
+    - [Lo básico](#lo-b-sico-)
+    - [Git branch](#git-branch-)
+    - [Github](#github-)
+  - [Conclusión](#conclusi-n)
+  - [REF](#ref)
 
 ### ¿Qué es Git?
 
 Es un control de versiones, pero en palabras simples es la forma de mantener un historial de todo el código que hemos desarrollado en nuestra app.
 En palabras mías: Git nos va a ayudar que el historial sea una "versión" sobre otra "versión", algo como.
-v0 => código inicial
-v1 => código con el feature #1
-v2 => código con el feature #2
 
-```mermaid
-flowchart LR
+- v0 => código inicial
+- v1 => código con el feature #1
+- v2 => código con el feature #2
 
-A((v0)) --> B((v1))
-B --> C((v2))
-
-```
+![](./git-basic/img1.png)
 
 Mantenemos el historial y adicional podemos crear estrategias más óptimas para trabajo en equipo, resolución de problemas y algunas cosas más.
 Realmente cada versión (v0, v1, v2) de mí ejemplo anterior sé conoce como commits.
@@ -71,7 +80,7 @@ git config --global user.name "name"
 git config --global user.email email
 
 # el siguiente paso es opcional, es para indicarle a Git que mí editor por defecto es vscode
-git config --global core.editor "code --wait"
+git config --global core.editor "code --wait" #nano, vim, etc.
 
 #si quieres ver tu configuración puedes darle el siguiente comando
 git config --global -e
@@ -128,32 +137,17 @@ Cuando hacemos cambios el historial sé va a ver de forma lineal, las ramas son 
 
 El siguiente gráfico tiene la rama principal que es la secuencia de commits v1,v2 y de ahí sé bifurca en una nueva branch y la rama principal sigue en v3 y v4.
 
-```mermaid
-flowchart LR
-
-A((c1)) --> B((c2))
-B --> C((c3))
-C --> D((c4))
-B --> E((new branch))
-E --> F((Cx))
-
-```
+![](./git-basic/img2.png)
 
 El objetivo de esto es poder luego "mezclar" las dos ramas para seguir en una sola y repetir el proceso de sacar nuevas ramas cuando requiera crear una nueva funcionalidad, dividir el trabajo, hacer una prueba de concepto sobre mí proyecto, etc.
 
-```mermaid
-flowchart LR
+![](./git-basic/img3.png)
 
-A((c1)) --> B((c2))
-B --> C((c3))
-C --> D((c4))
-B --> E((new branch))
-E --> F((Cx))
-D --> G((merge))
-F --> G((merge))
-G --> H((Cn))
+`Todo el tema de branch lo profundizaremos en el post numero dos de esta serie.`
 
-```
+<p align="center" width="100%">
+  <img src="https://media.giphy.com/media/cnhpl4IeYgU7MCBdV2/giphy.gif" width="150" />
+</p>
 
 ### Git branches - Comandos básicos
 
@@ -161,7 +155,7 @@ G --> H((Cn))
    `git branch <branch-name>`
 
 2. ¿Cómo cambiarme de una rama a otra?
-   `git checkout <branch-name>`
+   `git switch <branch-name>`
 
 3. ¿Cómo mezclar dos ramas?
    `git merge <branch-name>`
@@ -205,6 +199,68 @@ Después de registrarte puedes crear un repositorio y luego podemos enlazar nues
 Usa el [.gitignore](https://git-scm.com/docs/gitignore), básicamente es un archivo para poner extensiones, archivos o carpetas que quieres que sean ignorados.
 **Útil para:** Credenciales, archivos del editor o datos sensibles.
 
+### Practiquemos lo aprendido
+
+<p align="center" width="100%">
+  <img src="https://media.giphy.com/media/qDPg6HNz2NfAk/giphy.gif" width="200" />
+</p>
+
+El tutorial es muy fácil de seguir, solo debes tener Git instalado y tener una cuenta de Github para la última parte del tutorial.
+
+Sigue los pasos para que creemos nuestro primer repositorio, lo modifiquemos y lo subamos github.
+
+##### Lo básico:
+
+1. Crea una carpeta y abrir está carpeta en tu editor de código favorito.
+2. Si ya tienes configurado git puedes salarte este punto.
+   - `git config --global user.name "name"`
+   - `git config --global user.email email`
+3. Empecemos inicializando
+   - `git init`
+4. Vas a crear dos archivos **file1.txt**, **file2.txt**
+5. Veamos como está nuestro workspace
+   - `git status`
+   * Debería aparecer que tenemos dos archivos en color rojo en nuestra consola.
+6. Agreguemos los archivos a la etapa de stage
+   - `git add .`
+7. Veamos como está nuestro workspace nuevamente
+   - `git status`
+   * Debería aparecer que tenemos dos archivos en color verde en nuestra consola.
+8. Hagamos nuestro primer commit
+   - `git commit -m`
+   * Después del _-m_ coloca el mensaje para guardar tu primer commit
+9. Modifiquemos el **file1.txt**
+   - Agreguemos algunos textos acá
+10. Vuelve a agregar el archivo a la etapa de stage y haz un commit.
+
+##### Git branch:
+
+1. Vamos a crear una nueva rama llamada **b1**
+   - `git branch b1`
+2. Modifiquemos el **file2.txt**, **file1.txt**
+   - Agreguemos algún texto al file2 y agreguemos nuevo texto al file1
+3. Veamos las diferencias de lo que hemos modificado
+   - `git diff file1.txt`
+4. Hagamos commit
+5. Cambiémonos a la rama principal
+   - `git checkout master`
+6. Hagamos un merge
+   - `git merge b1`
+   - Ya tenemos los cambios de la rama b1 en nuestra rama principal
+7. Borremos la rama b1
+   - `git branch -d b1`
+
+##### Github:
+
+1. Creemos un nuevo proyecto
+2. Usemos el paso a paso que nos da github
+   - `git remote add origin ...`
+3. Subamos la rama a github
+   - `git push -u origin master`
+
+¡Felicitaciones!
+Creaste tu primer proyecto y usaste diferentes estrategias para modificar, crear ramas, subir a github.
+
 ### Conclusión
 
 Con esto sabes lo básico y un poco más sobre Git, ahora a practicar para seguir aprendiendo.
@@ -213,11 +269,16 @@ Después de utilizar comandos por consola sabes bien que hace nuestra GUI de git
 
 #### REF
 
+[Git-Oficial](https://git-scm.com/)
+[Github](https://lab.github.com/)
+[Git book](https://git-scm.com/book/es/v2).
+[Version control Git - Book](https://books.google.com.co/books/about/Version_Control_with_Git.html?id=qIucp61eqAwC&redir_esc=y)
+
 &nbsp;
 &nbsp;
 &nbsp;
 
-Gracias por llegar hasta acá Considera dar un like, compartir y nos vemos en un próximo artículo.
+Gracias por llegar hasta acá, considera dar un like, compartir y nos vemos en un próximo artículo.
 
 <p align="center" width="100%">
   <img src="https://i.imgur.com/q7fqQHS.gif" width="200" />
