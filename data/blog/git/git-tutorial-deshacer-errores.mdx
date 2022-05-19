@@ -14,26 +14,36 @@ Para eso es git, es nuestro helper, nuestra muralla para combatir errores.
 <TOCInline toc={props.toc} exclude="Contenido|GIT" fromHeading={3} toHeading={4} asDisclosure />
 
 La recomendación para sacar el máximo provecho a esté tutorial es preparar un ambiente para ver en acción como operan las diferentes condiciones.
-Con todo lo que has aprendido hasta acá va ser muy fácil para ti preparar ese ambiente de trabajo.
+Con todo lo que has aprendido hasta acá va ser muy fácil para ti preparar ese ambiente de trabajo. Puedes usar este cómo **base** para iniciar [github](https://github.com/jamescardona11/git-exercism)
 
 ### 1 Descartar todos los cambios en un archivo (uncommitted)
+
+Pre: Edita un archivo que estemos traqueando y que no hayamos confirmado los cambios
 
 -> `git restore <file-name>` o
 -> `git checkout <filename>`
 
 ### 2 Restaurar un archivo eliminado (uncommitted)
 
+Pre: Elimina un archivo que estemos traqueando y que no hayamos confirmado el borrado
+
 -> `git restore <file-name>`
 
 ### 3 Descartar algunas líneas de un archivo (uncommitted)
+
+Pre: Edita un archivo que estemos traqueando diferentes lineas de código y que no hayamos confirmado los cambios
 
 -> `git restore -p <file-name>`
 
 ### 4 Descartar todos los cambios en local (uncommitted)
 
+Pre: Edita multiples archivo que estemos traqueando diferentes lineas de código y que no hayamos confirmado los cambios
+
 -> `git restore .`
 
 ### 5 Arreglar el último commit
+
+Pre: Has un commit y copia mal el mensaje o deja algunos archivos sin completar
 
 -> `git commit --amend -m <new-message>`
 
@@ -45,10 +55,14 @@ Si quieres agregar algo que olvidaste
 
 ### 6 Revertir un commit en la mitad del proceso
 
+Pre: Busca un estado previo(hash) de un commit para restaurar a ese estado
+
 -> `git revert <hash>`
 Cuando se hace esto git va a crear un nuevo commit con el estado del revert
 
 ### 7 Resetear a una versión anterior
+
+Pre: Busca un estado previo(hash) de un branch para resetear a ese estado
 
 -> `git reset --hard <#hash>`
 Cuidado que el --hard va a eliminar los commits después del hash destino
@@ -58,24 +72,34 @@ Mantienen los cambios descartados como cambios locales, para que puedas trabajar
 
 ### 8 Resetear un archivo a versión anterior
 
+Pre: Busca un estado previo(hash) de un branch para resetear a ese estado
+
 -> `git restore --source <#hash> <file-name>`
 
 ### 9 Recuperar commits borrados
+
+Pre: Después de realizar el punto #8 puedes buscar el hash desde donde partiste para hacer el reset
 
 -> `git reflog` search the hash o HEAD# antes del reset
 -> `git branch <branch-name> <#hash>`
 
 ### 10 Recuperar una rama borrada
 
+Pre: Buscar el hash desde donde partiste para borrar la rama
+
 -> `git reflog` search the hash o HEAD# de la rama
 -> `git branch <branch-name> <#hash>`
 
 ### 11 Mover un commit a una nueva rama
 
+Pre: Crea un commit en una branch
+
 -> `git branch <branch-name>`
 -> `git reset HEAD~1 --hard`
 
 ### 12 Mover un commit a una rama diferente
+
+Pre: Crea dos branch con al menos un commit en cada una, mueve uno de los commit a la otra rama
 
 -> movernos a la rama destino `switch` o `checkout`
 -> `git cherry-pick <hash>`
