@@ -1,5 +1,5 @@
 ---
-title: Git para principiantes. Parte 1
+title: Git para todos. Parte 1 - Lo básico
 date: 2022-5-15
 tags: ['git', 'git-serie', 'basic']
 draft: false
@@ -11,7 +11,13 @@ summary: Git tiene la versatilidad para ayudarnos a trabajar de forma distribuid
 La idea principal es aprender de git más allá de lo que sé ahora.
 Quiero recordarme que lo básico en muchos casos es mejor. Git es la base para el trabajo distribuido vamos a lo básico y aprendamos algo que es para toda la vida.
 
-<TOCInline toc={props.toc} exclude="Contenido|GIT" toHeading={3} asDisclosure />
+<TOCInline
+  toc={props.toc}
+  exclude="Contenido|GIT|MISC"
+  fromHeading={3}
+  toHeading={4}
+  asDisclosure
+/>
 
 ### ¿Qué es Git?
 
@@ -22,7 +28,7 @@ En palabras mías: Git nos va a ayudar que el historial sea una "versión" sobre
 - v1 => código con el feature #1
 - v2 => código con el feature #2
 
-![](/static/images/git-basic/img1.png)
+![img1](/static/images/git/git-basic/img1.png)
 
 Mantenemos el historial y adicional podemos crear estrategias más óptimas para trabajo en equipo, resolución de problemas y algunas cosas más.
 Realmente cada versión (v0, v1, v2) de mí ejemplo anterior sé conoce como commits.
@@ -72,7 +78,7 @@ git config --global -e
 
 '' Algo que recomiendo mucho es generar alias para no tener que copiar tanto en consola, dejo el [link](https://git-scm.com/book/en/v2/Git-Basics-Git-Aliases) para aprender más sobre ellos.
 
-### Comandos básicos
+#### Comandos básicos
 
 - `git init`: Iniciar un nuevo historial de tracking (Solo sé debe hacer una vez)
 - `git status`: Nos dice en todo momento como esta el estado actual de nuestro workspace
@@ -121,11 +127,11 @@ Cuando hacemos cambios el historial sé va a ver de forma lineal, las ramas son 
 
 El siguiente gráfico tiene la rama principal que es la secuencia de commits c1,c2 y de ahí sé bifurca en una nueva branch y la rama principal sigue en c3 y c4.
 
-![](/static/images/git-basic/img2.png)
+![merge](/static/images/git/git-basic/img2.png)
 
 El objetivo de esto es poder luego "mezclar" las dos ramas para seguir en una sola y repetir el proceso de sacar nuevas ramas cuando requiera crear una nueva funcionalidad, dividir el trabajo, hacer una prueba de concepto sobre mí proyecto, etc.
 
-![](/static/images/git-basic/img3.png)
+![merge-goal](/static/images/git/git-basic/img3.png)
 
 `Todo el tema de branch lo profundizaremos en el post numero dos de esta serie.`
 
@@ -133,7 +139,7 @@ El objetivo de esto es poder luego "mezclar" las dos ramas para seguir en una so
   <img src="https://media.giphy.com/media/cnhpl4IeYgU7MCBdV2/giphy.gif" width="150" />
 </p>
 
-### Git branches - Comandos básicos
+#### Git branches - Comandos básicos
 
 1. ¿Cómo crear una rama?
    `git branch <branch-name>`
@@ -251,7 +257,7 @@ Con esto sabes lo básico y un poco más sobre Git, ahora a practicar para segui
 Git es la herramienta indispensable para nuestro trabajo como desarrollador y es importante que domines más conceptos que vamos a ir viendo en los siguientes posts.
 Después de utilizar comandos por consola sabes bien que hace nuestra GUI de git.
 
-#### REF
+### REF
 
 [Git-Oficial](https://git-scm.com/)
 [Github](https://lab.github.com/)
