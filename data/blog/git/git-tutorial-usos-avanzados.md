@@ -12,7 +12,7 @@ Si llegaste hasta acá, estoy seguro que ya tienes dominado gran parte de lo que
 En este tutorial y el próximo vamos a ver algunas situaciones particulares y como las podemos gestionar con git.
 Ese es el objetivo poder entrar a entender y resolver situaciones difíciles.
 
-`{/* <TOCInline toc={props.toc} exclude="Contenido|GIT" fromHeading={3} toHeading={4} asDisclosure /> */}`)
+<TOCInline toc={props.toc} exclude="Contenido|GIT" fromHeading={3} toHeading={4} asDisclosure />
 
 ### Volvamos a lo básico - Un buen commit
 
@@ -82,11 +82,37 @@ Entendamos está información:
 
 ### Reset
 
+Esté es un comando muy peligroso porque puede dañar nuestro trabajo si se usa mal pero es muy útil para muchas cosas.
+El **reset** es básicamente volver a un estado anterior algo, una branch, un archivo, un commit.
+
+Generalmente es usado para devolver el estado de una branch que se daño luego de un merge o algún cambio no deseado. Por el momento vamos a ver este comportamiento y ampliaremos más su uso en el próximo tutorial.
+
+Recuerdas el concepto de **HEAD**, cuando hacemos un merge y queremos devolvernos al estado anterior de ese merge podemos usar:
+`<destino>` para este ejemplo puede ser un hash o un HEAD.
+
+`git reset --hard <destino>`: Restablece el estado destino. Cualquier cambio en los archivos ya committed en el árbol de trabajo son descartados. En palabras simples borra todo los commits hasta el hash/HEAD destino.
+
+`git reset --mixed`: Restablece el estado destino. Preserva los archivos hasta 1el hash/HEAD destino pero debes hacer algo con ellos, borrarlos, eliminarlos o agregarlos nuevamente al árbol de commits.
+
 ### Cherry pick
+
+Básicamente el cherry pick es un comando que nos permite integrar desde una branch B, un único commit a la rama destino. Esto es útil cuando tenemos una funcionalidad compartida que aun no se ha integrado en la rama destino pero se require para poder seguir el ciclo de desarrollo.
+Otro caso de uso es cuando tenemos un hotfix por medio de un cherry pick podemos traer el cambio del hotfix a una rama destino.
+
+![cherry-pick](/static/images/git/git-advance/cherry-pick.png)
 
 ### Uso del reflog
 
+El reflog es el 'diario', el journal donde se registran todas las interacciones con git.
+Es fácil de usar pero poderoso para que podamos complementar nuestro trabajo a la hora de buscar y encontrar diferentes acciones realizadas previamente
+
+![reflog](/static/images/git/git-advance/reflog.png)
+
+En el siguiente tutorial veremos varios usos de este comando.
+
 ### Conclusiones
+
+Después de hacer este tutorial, estamos listos para iniciar el último y más retador, donde veremos más de 10 casos y situaciones a resolver con todo lo aprendido hasta ahora.
 
 ### Referencias
 
