@@ -5,15 +5,21 @@ import Pagination from '@/components/Pagination'
 import formatDate from '@/lib/utils/formatDate'
 
 export default function ListLayout({ posts, title, initialDisplayPosts = [], pagination }) {
+  const now = new Date()
+  const newInitialDisplayPosts = initialDisplayPosts.filter((post) => now >= new Date(post.date))
+
   const [searchValue, setSearchValue] = useState('')
   const filteredBlogPosts = posts.filter((frontMatter) => {
     const searchContent = frontMatter.title + frontMatter.summary + frontMatter.tags.join(' ')
-    return searchContent.toLowerCase().includes(searchValue.toLowerCase())
+    return (
+      searchContent.toLowerCase().includes(searchValue.toLowerCase()) &&
+      now >= new Date(frontMatter.date)
+    )
   })
 
   // If initialDisplayPosts exist, display it if no searchValue is specified
   const displayPosts =
-    initialDisplayPosts.length > 0 && !searchValue ? initialDisplayPosts : filteredBlogPosts
+    newInitialDisplayPosts.length > 0 && !searchValue ? newInitialDisplayPosts : filteredBlogPosts
 
   return (
     <>

@@ -16,6 +16,9 @@ export async function getStaticProps() {
 }
 
 export default function Home({ posts }) {
+  const now = new Date()
+  const newPosts = posts.filter((post) => now >= new Date(post.date))
+
   return (
     <>
       <PageSEO title={siteMetadata.title} description={siteMetadata.description} />
@@ -27,8 +30,8 @@ export default function Home({ posts }) {
           </h1>
         </div>
         <ul className="divide-y divide-gray-200 dark:divide-gray-700">
-          {!posts.length && 'No posts found.'}
-          {posts.slice(0, MAX_DISPLAY).map((frontMatter) => {
+          {!newPosts.length && 'No posts found.'}
+          {newPosts.slice(0, MAX_DISPLAY).map((frontMatter) => {
             const { slug, date, title, tags } = frontMatter
             return (
               <li key={slug} className="py-4">
@@ -66,7 +69,7 @@ export default function Home({ posts }) {
           })}
         </ul>
       </div>
-      {posts.length > MAX_DISPLAY && (
+      {newPosts.length > MAX_DISPLAY && (
         <div className="flex justify-end text-base font-medium leading-6">
           <Link
             href="/blog"
