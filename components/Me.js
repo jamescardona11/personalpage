@@ -39,7 +39,7 @@ const Me = () => {
       </div>
       <div className="flex text-base text-sm leading-6">
         <Link
-          href={siteMetadata.notion}
+          href={siteMetadata.cv}
           className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
           aria-label="download cv"
         >

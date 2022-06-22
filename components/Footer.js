@@ -32,7 +32,7 @@ export default function Footer() {
             </>
           </Link>
           <div className="mr-2 ml-2" />
-          <Link href={siteMetadata.notion} aria-label="linkedin">
+          <Link href={siteMetadata.notion} aria-label="notion">
             <>
               <Image
                 alt="notion James Cardona"
