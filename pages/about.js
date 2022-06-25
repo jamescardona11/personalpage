@@ -5,17 +5,20 @@ const DEFAULT_LAYOUT = 'AuthorLayout'
 
 export async function getStaticProps() {
   const authorDetails = await getFileBySlug('authors', ['default'])
+
   return { props: { authorDetails } }
 }
 
 export default function About({ authorDetails }) {
   const { mdxSource, frontMatter } = authorDetails
+  // const { mdxSource: routine } = routineDetails
 
   return (
     <MDXLayoutRenderer
-      layout={frontMatter.layout || DEFAULT_LAYOUT}
+      layout={DEFAULT_LAYOUT}
       mdxSource={mdxSource}
       frontMatter={frontMatter}
+      // routine={routine}
     />
   )
 }

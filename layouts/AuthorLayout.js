@@ -1,52 +1,52 @@
 import SocialIcon from '@/components/social-icons'
 import { PageSEO } from '@/components/SEO'
+import siteMetadata from '@/data/siteMetadata'
 import { MiddleSectionTitle, MiddleSectionTitleType } from './components/MiddleSectionTitle'
 
 export default function AuthorLayout({ children, frontMatter }) {
-  const { name, avatar, occupation, company, email, twitter, linkedin, github } = frontMatter
+  const { name, insight1, insightDesc1, insight2, insightDesc2, insight3, insightDesc3, routine } =
+    frontMatter
 
   return (
     <>
       <PageSEO title={`About - ${name}`} description={`About me - ${name}`} />
-      <div className="divide-y divide-gray-200 dark:divide-gray-700">
-        <div className="space-y-2 pt-6 pb-8 md:space-y-5">
-          <h1 className="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
-            About
-          </h1>
-        </div>
-        <div className="items-start space-y-2 xl:grid xl:grid-cols-3 xl:gap-x-8 xl:space-y-0">
-          <div className="flex flex-col items-center pt-8">
-            <h3 className="pt-4 pb-2 text-2xl font-bold leading-8 tracking-tight">{name}</h3>
-            <div className="text-gray-500 dark:text-gray-400">{occupation}</div>
-            <div className="text-gray-500 dark:text-gray-400">{company}</div>
-            <div className="flex space-x-3 pt-6">
-              <SocialIcon kind="mail" href={`mailto:${email}`} />
-              <SocialIcon kind="github" href={github} />
-              <SocialIcon kind="linkedin" href={linkedin} />
-              <SocialIcon kind="twitter" href={twitter} />
-            </div>
-          </div>
-          <div className="prose max-w-none pt-8 pb-8 dark:prose-dark xl:col-span-2">{children}</div>
-        </div>
-      </div>
-
       <section className="bg-white dark:bg-gray-900">
         <div className="w-full space-y-12 ">
           <div>
             <h1 className="text-3xl font-bold text-gray-800 dark:text-white lg:text-4xl">
               hello there! 👋
             </h1>
+            <br />
+            <a className="md-2">{routine}</a>
 
             <div className="mt-2">
               <span className="inline-block h-1 w-40 rounded-full bg-blue-500"></span>
               <span className="ml-1 inline-block h-1 w-3 rounded-full bg-blue-500"></span>
               <span className="ml-1 inline-block h-1 w-1 rounded-full bg-blue-500"></span>
             </div>
+
+            <h2 className="mb-4 pt-3 text-gray-900  dark:text-white">
+              Mi nombre es <a className="font-semibold">{name},</a> {siteMetadata.aboutme}
+            </h2>
           </div>
 
-          <MiddleSectionTitle type={MiddleSectionTitleType.CurrentWork} />
-          <MiddleSectionTitle type={MiddleSectionTitleType.Goals} />
-          <MiddleSectionTitle type={MiddleSectionTitleType.LearningPath} />
+          <MiddleSectionTitle
+            type={MiddleSectionTitleType.Insight1}
+            title={insight1}
+            description={insightDesc1}
+          />
+          <MiddleSectionTitle
+            type={MiddleSectionTitleType.Insight2}
+            title={insight2}
+            description={insightDesc2}
+          />
+          <MiddleSectionTitle
+            type={MiddleSectionTitleType.Insight3}
+            title={insight3}
+            description={insightDesc3}
+          />
+
+          <div className="prose max-w-none pt-8 pb-8 dark:prose-dark xl:col-span-2">{children}</div>
 
           <hr className="my-12 border-gray-200 dark:border-gray-700" />
         </div>
@@ -54,36 +54,3 @@ export default function AuthorLayout({ children, frontMatter }) {
     </>
   )
 }
-
-// import { PageSEO } from '@/components/SEO'
-// import siteMetadata from '@/data/siteMetadata'
-// import PageTitle from '@/components/PageTitle'
-// import SectionContainer from '@/components/SectionContainer'
-
-// export default function PostLayout({ frontMatter, next, prev, children }) {
-//   const { title } = frontMatter
-
-//   return (
-//     <SectionContainer>
-//       <PageSEO
-//         title={`Acerca de mi - ${siteMetadata.author}`}
-//         description={siteMetadata.description}
-//       />
-//       <article>
-//         <div>
-//           <header>
-//             <PageTitle>{title}</PageTitle>
-//           </header>
-//           <div
-//             className="divide-y divide-gray-200 pb-8 dark:divide-gray-700 xl:divide-y-0 "
-//             style={{ gridTemplateRows: 'auto 1fr' }}
-//           >
-//             <div className="divide-y divide-gray-200 dark:divide-gray-700 xl:col-span-3 xl:row-span-2 xl:pb-0">
-//               <div className="prose max-w-none pt-10 pb-8 dark:prose-dark">{children}</div>
-//             </div>
-//           </div>
-//         </div>
-//       </article>
-//     </SectionContainer>
-//   )
-// }

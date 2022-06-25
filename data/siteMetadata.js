@@ -3,6 +3,8 @@ const siteMetadata = {
   author: 'James Cardona',
   headerTitle: '@jamescardona11',
   description: 'Esté es mi primer blog, el objetivo con esto es retarme para aprender mucho más.',
+  aboutme:
+    'Tech Explorer | Apasionado por la tecnología, videojuegos y un entusiasta del mundo Cripto y NFTs.',
   language: 'es-co',
   theme: 'system', // system, dark or light
   siteUrl: 'jamescardona11.com',
