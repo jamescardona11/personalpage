@@ -1,38 +1,28 @@
 import Link from '@/components/Link'
 import Tag from '@/components/Tag'
+import siteMetadata from '@/data/siteMetadata'
 import { useState } from 'react'
 import Pagination from '@/components/Pagination'
 import formatDate from '@/lib/utils/formatDate'
 
 export default function ListLayout({ posts, title, initialDisplayPosts = [], pagination }) {
-  const now = new Date()
-  const newInitialDisplayPosts = initialDisplayPosts.filter((post) => now >= new Date(post.date))
-
   const [searchValue, setSearchValue] = useState('')
   const filteredBlogPosts = posts.filter((frontMatter) => {
     const searchContent = frontMatter.title + frontMatter.summary + frontMatter.tags.join(' ')
-    return (
-      searchContent.toLowerCase().includes(searchValue.toLowerCase()) &&
-      now >= new Date(frontMatter.date)
-    )
+    return searchContent.toLowerCase().includes(searchValue.toLowerCase())
   })
 
   // If initialDisplayPosts exist, display it if no searchValue is specified
   const displayPosts =
-    newInitialDisplayPosts.length > 0 && !searchValue ? newInitialDisplayPosts : filteredBlogPosts
+    initialDisplayPosts.length > 0 && !searchValue ? initialDisplayPosts : filteredBlogPosts
 
   return (
     <>
-      <div className="divide-y">
+      <div className="divide-y divide-gray-200 dark:divide-gray-700">
         <div className="space-y-2 pt-6 pb-8 md:space-y-5">
           <h1 className="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
             {title}
           </h1>
-          <p className="text-sm text-gray-700 dark:text-gray-400">
-            Esté blog, es un reto personal, la verdad no me considero experto en ninguna de los
-            temas que voy a tratar acá. Lo que sé es que voy a colocar mucho amor, que sean posts de
-            valor.
-          </p>
           <div className="relative max-w-lg">
             <input
               aria-label="Search articles"
@@ -58,7 +48,7 @@ export default function ListLayout({ posts, title, initialDisplayPosts = [], pag
           </div>
         </div>
         <ul>
-          {!filteredBlogPosts.length && 'Ningún posts encontrado.'}
+          {!filteredBlogPosts.length && 'No posts found.'}
           {displayPosts.map((frontMatter) => {
             const { slug, date, title, summary, tags } = frontMatter
             return (

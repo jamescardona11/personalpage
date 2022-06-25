@@ -4,6 +4,8 @@ import generateRss from '@/lib/generate-rss'
 import { MDXLayoutRenderer } from '@/components/MDXComponents'
 import { formatSlug, getAllFilesFrontMatter, getFileBySlug, getFiles } from '@/lib/mdx'
 
+const DEFAULT_LAYOUT = 'PostLayout'
+
 export async function getStaticPaths() {
   const posts = getFiles('blog')
   return {
@@ -40,13 +42,12 @@ export async function getStaticProps({ params }) {
 
 export default function Blog({ post, authorDetails, prev, next }) {
   const { mdxSource, toc, frontMatter } = post
-  // console.log(frontMatter.layout || DEFAULT_LAYOUT)
 
   return (
     <>
       {frontMatter.draft !== true ? (
         <MDXLayoutRenderer
-          layout="PostSimple"
+          layout={frontMatter.layout || DEFAULT_LAYOUT}
           toc={toc}
           mdxSource={mdxSource}
           frontMatter={frontMatter}
@@ -57,7 +58,7 @@ export default function Blog({ post, authorDetails, prev, next }) {
       ) : (
         <div className="mt-24 text-center">
           <PageTitle>
-            En Construcción{' '}
+            Under Construction{' '}
             <span role="img" aria-label="roadwork sign">
               🚧
             </span>
