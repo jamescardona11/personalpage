@@ -3,6 +3,8 @@ import { PageSEO } from '@/components/SEO'
 import siteMetadata from '@/data/siteMetadata'
 import { InsightsSection, MiddleSectionTitleType } from './components/InsightsSection'
 import { Skills } from './components/Skills'
+import { BasicTimeLine } from './components/BasicTimeLine'
+import { DownloadButton } from './components/DownloadButton'
 
 export default function AuthorLayout({ children, frontMatter }) {
   const { name, insight1, insightDesc1, insight2, insightDesc2, insight3, insightDesc3, routine } =
@@ -29,6 +31,7 @@ export default function AuthorLayout({ children, frontMatter }) {
             <h2 className="mb-4 pt-3 text-gray-900  dark:text-white">
               Mi nombre es <a className="font-semibold">{name},</a> {siteMetadata.aboutme}
             </h2>
+            <DownloadButton href={siteMetadata.cv} />
           </div>
 
           <InsightsSection
