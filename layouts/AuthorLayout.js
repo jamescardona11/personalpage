@@ -1,5 +1,6 @@
 import SocialIcon from '@/components/social-icons'
 import { PageSEO } from '@/components/SEO'
+import { MiddleSectionTitle, MiddleSectionTitleType } from './components/MiddleSectionTitle'
 
 export default function AuthorLayout({ children, frontMatter }) {
   const { name, avatar, occupation, company, email, twitter, linkedin, github } = frontMatter
@@ -28,6 +29,28 @@ export default function AuthorLayout({ children, frontMatter }) {
           <div className="prose max-w-none pt-8 pb-8 dark:prose-dark xl:col-span-2">{children}</div>
         </div>
       </div>
+
+      <section className="bg-white dark:bg-gray-900">
+        <div className="w-full space-y-12 ">
+          <div>
+            <h1 className="text-3xl font-bold text-gray-800 dark:text-white lg:text-4xl">
+              hello there! 👋
+            </h1>
+
+            <div className="mt-2">
+              <span className="inline-block h-1 w-40 rounded-full bg-blue-500"></span>
+              <span className="ml-1 inline-block h-1 w-3 rounded-full bg-blue-500"></span>
+              <span className="ml-1 inline-block h-1 w-1 rounded-full bg-blue-500"></span>
+            </div>
+          </div>
+
+          <MiddleSectionTitle type={MiddleSectionTitleType.CurrentWork} />
+          <MiddleSectionTitle type={MiddleSectionTitleType.Goals} />
+          <MiddleSectionTitle type={MiddleSectionTitleType.LearningPath} />
+
+          <hr className="my-12 border-gray-200 dark:border-gray-700" />
+        </div>
+      </section>
     </>
   )
 }

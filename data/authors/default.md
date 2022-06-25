@@ -1,6 +1,7 @@
 ---
 name: James Cardona
 date: ''
+code: Actualmente trabajo como Software Engineer en <>https://57blocks.io/.<><br><>Mi rol principal es Lead Flutter developer para <>https://tokenpad.io/<>
 ---
 
 # hello there! 👋
