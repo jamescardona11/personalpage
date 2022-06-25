@@ -5,7 +5,7 @@ insightDesc1: Actualmente trabajo como Software Engineer en <>https://57blocks.i
 insight2: Objetivos
 insightDesc2: Mis próximos objetivos:<><br><>- No parar de aprender.<><br><>- Mejorar mi conocimiento de  Web3 y Clojure.<><br><>- Participar en proyectos OpenSource.<><br><>- Crear un curso de Flutter
 insight3: Learning Path
-insightDesc3: Para mi es importante seguir aprendiendo mi objetivo es registrar todo en <>https://bit.ly/3bhIfuk(Notion).
+insightDesc3: Para mi es importante seguir aprendiendo mi objetivo es registrar todo en <>https://bit.ly/3bhIfuk(Notion.)<><br><>Este learning path lo usaré para crear un curso que pueda cubrir muchas cosas.
 routine: sleep(😴); eat(🍜); code(👨🏻‍💻); code(👨🏻‍💻); repeat(👁‍🗨);
 ---
 
@@ -17,6 +17,6 @@ Este es mí primer blog y actualmente es mi 'excusa' para aprender cosas nuevas.
 
 #### Gracias a:
 
-- Para construir este blog, use la el template de: [Tailwind Nextjs Starter Blog](https://github.com/timlrx/tailwind-nextjs-starter-blog)
-- Use algunos complementos como base desde: [Merakiui](https://merakiui.com/components/)
+- Para construir este blog, usé este template: [Tailwind Nextjs Starter Blog](https://github.com/timlrx/tailwind-nextjs-starter-blog)
+- Use algunos complementos como base desde: [Merakiui](https://merakiui.com/components/) y [hyperui](https://www.hyperui.dev/)
 - [Vercel](vercel.com/) por permitirme alojar el blog.

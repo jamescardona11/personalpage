@@ -1,7 +1,8 @@
 import SocialIcon from '@/components/social-icons'
 import { PageSEO } from '@/components/SEO'
 import siteMetadata from '@/data/siteMetadata'
-import { MiddleSectionTitle, MiddleSectionTitleType } from './components/MiddleSectionTitle'
+import { InsightsSection, MiddleSectionTitleType } from './components/InsightsSection'
+import { Skills } from './components/Skills'
 
 export default function AuthorLayout({ children, frontMatter }) {
   const { name, insight1, insightDesc1, insight2, insightDesc2, insight3, insightDesc3, routine } =
@@ -17,7 +18,7 @@ export default function AuthorLayout({ children, frontMatter }) {
               hello there! 👋
             </h1>
             <br />
-            <a className="md-2">{routine}</a>
+            <a>{routine}</a>
 
             <div className="mt-2">
               <span className="inline-block h-1 w-40 rounded-full bg-blue-500"></span>
@@ -30,21 +31,23 @@ export default function AuthorLayout({ children, frontMatter }) {
             </h2>
           </div>
 
-          <MiddleSectionTitle
+          <InsightsSection
             type={MiddleSectionTitleType.Insight1}
             title={insight1}
             description={insightDesc1}
           />
-          <MiddleSectionTitle
+          <InsightsSection
             type={MiddleSectionTitleType.Insight2}
             title={insight2}
             description={insightDesc2}
           />
-          <MiddleSectionTitle
+          <InsightsSection
             type={MiddleSectionTitleType.Insight3}
             title={insight3}
             description={insightDesc3}
           />
+
+          <Skills />
 
           <div className="prose max-w-none pt-8 pb-8 dark:prose-dark xl:col-span-2">{children}</div>
 
