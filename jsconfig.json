@@ -1,5 +1,8 @@
 {
   "compilerOptions": {
+    "module": "ES6",
+    "jsx": "preserve",
+    "checkJs": true,
     "baseUrl": ".",
     "paths": {
       "@/components/*": ["components/*"],
@@ -8,5 +11,9 @@
       "@/lib/*": ["lib/*"],
       "@/css/*": ["css/*"]
     }
-  }
+  },
+  "exclude": [
+    "node_modules",
+    "**/node_modules/*"
+  ]
 }
