@@ -1,14 +1,14 @@
 import React from 'react'
-import { PathAndTitle } from './PathAndTitle'
+import { SvgPath, PathType } from '@/components/SvgPath'
 
 export const Skills = () => {
-  const path =
-    'M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z'
   return (
     <>
       <div className="grid">
         <div className="mb:-mx-4 md:flex md:items-start">
-          <PathAndTitle path={path} />
+          <div className="md:-mx-4 md:flex md:items-start">
+            <SvgPath path={PathType.pathGraph} />
+          </div>
 
           <div className="mt-4 md:mx-4 md:mt-0">
             <h3 className="text-2xl font-semibold capitalize text-gray-700 dark:text-white">
