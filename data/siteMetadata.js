@@ -1,10 +1,14 @@
 const siteMetadata = {
   title: 'My Tech Blog, @jamescardona11',
   author: 'James Cardona',
+  role: 'Software Engineer | <>[57Blocks][https://57blocks.io]',
+  profileImage: '/static/images/avatar.jpg',
   headerTitle: '@jamescardona11',
   description: 'Esté es mi primer blog, el objetivo con esto es retarme para aprender mucho más.',
-  aboutme:
+  aboutMe:
     'Tech Explorer | Apasionado por la tecnología, videojuegos y un entusiasta del mundo Cripto y NFTs.',
+  topic1: '#fluter, #python, #nodejs, #web3, #solidity, #clojure <3 y #next.js.',
+  topic2: 'Creando aplicaciones, emprendiendo y aprendiendo.',
   language: 'es-co',
   theme: 'system', // system, dark or light
   siteUrl: 'jamescardona11.com',

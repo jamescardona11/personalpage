@@ -1,6 +1,5 @@
 import { useState } from 'react'
 
-import SocialIcon from '@/components/social-icons'
 import { PageSEO } from '@/components/SEO'
 import siteMetadata from '@/data/siteMetadata'
 import { stringToJSX } from '@/lib/utils/stringToJSX'
