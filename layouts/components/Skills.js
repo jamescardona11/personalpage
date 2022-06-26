@@ -1,5 +1,5 @@
 import React from 'react'
-import { SvgPath, PathType } from '@/components/SvgPath'
+import { SvgPathRounded, PathType } from '@/components/SvgPath'
 
 export const Skills = () => {
   return (
@@ -7,7 +7,7 @@ export const Skills = () => {
       <div className="grid">
         <div className="mb:-mx-4 md:flex md:items-start">
           <div className="md:-mx-4 md:flex md:items-start">
-            <SvgPath path={PathType.pathGraph} />
+            <SvgPathRounded path={PathType.pathGraph} />
           </div>
 
           <div className="mt-4 md:mx-4 md:mt-0">
