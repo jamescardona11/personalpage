@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, createRef } from 'react'
 import Image from './Image'
 import Link from './Link'
 import Tag from '@/components/Tag'
@@ -12,7 +12,7 @@ const Card = ({ title, description, imgSrc, href, tag }) => {
   }
   return (
     <>
-      <section className="md p-2 md:w-1/2" style={{ maxWidth: '544px' }}>
+      <div className="md p-2 md:w-1/2" style={{ maxWidth: '544px' }}>
         <div className="bg-transparent perspective">
           <div
             className={
@@ -46,12 +46,7 @@ const Card = ({ title, description, imgSrc, href, tag }) => {
                   {description}
                 </p>
                 <div className="mt-4 flex items-center justify-between">
-                  <a
-                    className="cursor-pointer text-base font-medium leading-6 text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
-                    onClick={handleClick}
-                  >
-                    Ver imágenes
-                  </a>
+                  <a className="cursor-pointer text-base font-medium leading-6 text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"></a>
                   <div className="flex items-center">
                     {imgSrc &&
                       (href ? (
@@ -79,7 +74,7 @@ const Card = ({ title, description, imgSrc, href, tag }) => {
             </div>
           </div>
         </div>
-      </section>
+      </div>
     </>
   )
 }
