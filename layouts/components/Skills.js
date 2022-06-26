@@ -33,8 +33,8 @@ export const Skills = () => {
 const SkillsBar = ({ tag, color, percentage }) => {
   return (
     <>
-      <p className="text-xs font-medium text-gray-700">{tag}</p>
-      <div className="mt-2 mb-2 overflow-hidden rounded-full bg-gray-200">
+      <p className="text-xs font-medium text-gray-700 dark:text-gray-300">{tag}</p>
+      <div className="mt-2 mb-2 overflow-hidden rounded-full bg-gray-200 ">
         <div className={`h-2 ${percentage} rounded-full ${color}`}></div>
       </div>
     </>

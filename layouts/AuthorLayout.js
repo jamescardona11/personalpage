@@ -1,4 +1,5 @@
 import { useState } from 'react'
+
 import SocialIcon from '@/components/social-icons'
 import { PageSEO } from '@/components/SEO'
 import siteMetadata from '@/data/siteMetadata'
@@ -8,7 +9,6 @@ import { Skills } from './components/Skills'
 import { BasicTimeLine } from './components/BasicTimeLine'
 import { DownloadButton } from './components/DownloadButton'
 import { TabsSection } from './components/TabsSection'
-import Link from 'node_modules/next/link'
 
 export default function AuthorLayout({ children, frontMatter }) {
   const { name, aboutMe, thanksTo, routine } = frontMatter
@@ -20,16 +20,16 @@ export default function AuthorLayout({ children, frontMatter }) {
     <>
       <PageSEO title={`About - ${name}`} description={`About me - ${name}`} />
 
-      <section className="bg-white dark:bg-gray-900">
+      <section className="mt-10 bg-white dark:bg-gray-900">
         <div className="w-full space-y-12 ">
           <div>
             <h1 className="text-3xl font-bold text-gray-800 dark:text-white lg:text-4xl">
               hello there! 👋
             </h1>
             <br />
-            <a>{routine}</a>
+            <a>`eat(🍜); code(👨🏻‍💻); code(👨🏻‍💻); sleep(😴); repeat(👁‍🗨);`</a>
 
-            <div className="mt-2">
+            <div className="mt-2 mb-4">
               <span className="inline-block h-1 w-40 rounded-full bg-blue-500"></span>
               <span className="ml-1 inline-block h-1 w-3 rounded-full bg-blue-500"></span>
               <span className="ml-1 inline-block h-1 w-1 rounded-full bg-blue-500"></span>

@@ -5,7 +5,7 @@ export const BasicTimeLine = () => {
   return (
     <>
       <h3 className="mb-8 text-gray-900  dark:text-white">
-        Si quieres ver todo el timeline visita LinkedIn
+        Si quieres ver todo el timeline visita mi LinkedIn
       </h3>
       <ol className="relative border-l border-gray-200 dark:border-gray-700">
         <li className="mb-10 ml-6">

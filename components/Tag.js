@@ -1,37 +1,22 @@
 import Link from 'next/link'
 import kebabCase from '@/lib/utils/kebabCase'
 
-const Tag = ({ text }) => {
-  return (
-    <Link href={`/tags/${kebabCase(text)}`}>
-      <a className="mr-3 text-sm font-medium uppercase text-primary-500 hover:text-primary-600 dark:hover:text-primary-400">
-        {text.split(' ').join('-')}
+const Tag = ({ text, isEnable }) => {
+  if (isEnable === 'false') {
+    return (
+      <a className="rounded bg-gray-600 px-3 py-0.5 text-sm font-semibold text-gray-100 transition-colors duration-200 ">
+        {text}
       </a>
-    </Link>
-  )
+    )
+  } else {
+    return (
+      <Link className="mt-2 flex items-center justify-between" href={`/tags/${kebabCase(text)}`}>
+        <a className="transform cursor-pointer rounded bg-gray-600 px-3 py-0.5 text-sm font-semibold text-gray-100 transition-colors duration-200 ">
+          #{text}
+        </a>
+      </Link>
+    )
+  }
 }
 
 export default Tag
-
-// import Link from 'next/link'
-// import kebabCase from '@/lib/utils/kebabCase'
-
-// const Tag = ({ text, isEnable }) => {
-//   if (isEnable === 'false') {
-//     return (
-//       <a className="mr-3 text-sm font-medium text-black hover:text-black dark:text-white dark:hover:text-white">
-//         {text.split(' ').join('-')}
-//       </a>
-//     )
-//   } else {
-//     return (
-//       <Link href={`/tags/${kebabCase(text)}`}>
-//         <a className="mr-3 text-sm font-medium text-primary-500 hover:text-primary-600 dark:hover:text-primary-400">
-//           #{text.split(' ').join('-')}
-//         </a>
-//       </Link>
-//     )
-//   }
-// }
-
-// export default Tag
