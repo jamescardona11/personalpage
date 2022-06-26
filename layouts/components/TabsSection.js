@@ -1,5 +1,6 @@
 import { SvgPathRounded, SvgPathFlat, PathType } from '@/components/SvgPath'
 import { useState } from 'react'
+import { BasicTimeLine } from './BasicTimeLine'
 import { Skills } from './Skills'
 import { TabMe } from './TabMe'
 
@@ -117,13 +118,7 @@ export const TabsSection = ({ githubStats, frontMatter }) => {
                   </div>
                 </div>
                 <div className={openTab === 3 ? 'block' : 'hidden'} id="link3">
-                  <p>
-                    Efficiently unleash cross-media information without cross-media value. Quickly
-                    maximize timely deliverables for real-time schemas.
-                    <br />
-                    <br /> Dramatically maintain clicks-and-mortar solutions without functional
-                    solutions.
-                  </p>
+                  <BasicTimeLine />
                 </div>
               </div>
             </div>

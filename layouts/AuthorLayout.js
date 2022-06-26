@@ -8,6 +8,7 @@ import { Skills } from './components/Skills'
 import { BasicTimeLine } from './components/BasicTimeLine'
 import { DownloadButton } from './components/DownloadButton'
 import { TabsSection } from './components/TabsSection'
+import Link from 'node_modules/next/link'
 
 export default function AuthorLayout({ children, frontMatter }) {
   const { name, aboutMe, thanksTo, routine } = frontMatter
@@ -35,8 +36,7 @@ export default function AuthorLayout({ children, frontMatter }) {
             </div>
 
             <h2 className="mb-4 pt-3 text-gray-900  dark:text-white">{aboutMeJSX}</h2>
-            {/* <DownloadButton href={siteMetadata.cv} />
-             */}
+
             <TabsSection githubStats={children} frontMatter={frontMatter} />
           </div>
 

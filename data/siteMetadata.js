@@ -86,3 +86,5 @@ const siteMetadata = {
 }
 
 module.exports = siteMetadata
+
+// https://bit.ly/3bhIfuk notion
