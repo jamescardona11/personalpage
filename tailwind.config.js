@@ -1,5 +1,23 @@
 const defaultTheme = require('tailwindcss/defaultTheme')
 const colors = require('tailwindcss/colors')
+const plugin = require('tailwindcss/plugin')
+
+const FlipClass = plugin(function ({ addUtilities }) {
+  addUtilities({
+    '.my-rotate-y-180': {
+      transform: 'rotateY(180deg)',
+    },
+    '.preserve-3d': {
+      transformStyle: 'preserve-3d',
+    },
+    '.perspective': {
+      perspective: '1000px',
+    },
+    '.backface-hidden': {
+      backfaceVisibility: 'hidden',
+    },
+  })
+})
 
 module.exports = {
   experimental: {
@@ -13,6 +31,7 @@ module.exports = {
     './data/**/*.mdx',
   ],
   darkMode: 'class',
+
   theme: {
     extend: {
       spacing: {
@@ -164,5 +183,5 @@ module.exports = {
       }),
     },
   },
-  plugins: [require('@tailwindcss/forms'), require('@tailwindcss/typography')],
+  plugins: [require('@tailwindcss/forms'), require('@tailwindcss/typography'), FlipClass],
 }
