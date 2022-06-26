@@ -1,104 +1,55 @@
+import { SvgSpan } from '@/components/SvgPath'
+import { stringToJSX } from '@/lib/utils/stringToJSX'
+
 export const BasicTimeLine = () => {
   return (
     <>
+      <h3 className="mb-8 text-gray-900  dark:text-white">
+        Si quieres ver todo el timeline visita LinkedIn
+      </h3>
       <ol className="relative border-l border-gray-200 dark:border-gray-700">
         <li className="mb-10 ml-6">
-          <span className="absolute -left-3 flex h-6 w-6 items-center justify-center rounded-full bg-blue-200 ring-8 ring-white dark:bg-blue-900 dark:ring-gray-900">
-            <svg
-              className="h-3 w-3 text-blue-600 dark:text-blue-400"
-              fill="currentColor"
-              viewBox="0 0 20 20"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                fillRule="evenodd"
-                d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z"
-                clipRule="evenodd"
-              ></path>
-            </svg>
-          </span>
+          <SvgSpan />
           <h3 className="mb-1 flex items-center text-lg font-semibold text-gray-900 dark:text-white">
-            Flowbite Application UI v2.0.0{' '}
+            Flutter Developer - 57Blocks
             <span className="mr-2 ml-3 rounded bg-blue-100 px-2.5 py-0.5 text-sm font-medium text-blue-800 dark:bg-blue-200 dark:text-blue-800">
-              Latest
+              Actual
             </span>
           </h3>
           <time className="mb-2 block text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
-            Released on January 13th, 2022
+            Inicio: Sep 16th, 2020
           </time>
           <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
-            Get access to over 20+ pages including a dashboard layout, charts, kanban board,
-            calendar, and pre-order E-commerce & Marketing pages.
-          </p>
-          <a
-            href="#"
-            className="inline-flex items-center rounded-lg border border-gray-200 bg-white py-2 px-4 text-sm font-medium text-gray-900 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:text-blue-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:border-gray-600 dark:bg-gray-800 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white dark:focus:ring-gray-700"
-          >
-            <svg
-              className="mr-2 h-4 w-4"
-              fill="currentColor"
-              viewBox="0 0 20 20"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                fillRule="evenodd"
-                d="M6 2a2 2 0 00-2 2v12a2 2 0 002 2h8a2 2 0 002-2V7.414A2 2 0 0015.414 6L12 2.586A2 2 0 0010.586 2H6zm5 6a1 1 0 10-2 0v3.586l-1.293-1.293a1 1 0 10-1.414 1.414l3 3a1 1 0 001.414 0l3-3a1 1 0 00-1.414-1.414L11 11.586V8z"
-                clipRule="evenodd"
-              ></path>
-            </svg>{' '}
-            Download ZIP
-          </a>
-        </li>
-        <li className="mb-10 ml-6">
-          <span className="absolute -left-3 flex h-6 w-6 items-center justify-center rounded-full bg-blue-200 ring-8 ring-white dark:bg-blue-900 dark:ring-gray-900">
-            <svg
-              className="h-3 w-3 text-blue-600 dark:text-blue-400"
-              fill="currentColor"
-              viewBox="0 0 20 20"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                fillRule="evenodd"
-                d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z"
-                clipRule="evenodd"
-              ></path>
-            </svg>
-          </span>
-          <h3 className="mb-1 text-lg font-semibold text-gray-900 dark:text-white">
-            Flowbite Figma v1.3.0
-          </h3>
-          <time className="mb-2 block text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
-            Released on December 7th, 2021
-          </time>
-          <p className="text-base font-normal text-gray-500 dark:text-gray-400">
-            All of the pages and components are first designed in Figma and we keep a parity between
-            the two versions even as we update the project.
+            Mi rol principal es guiar a un equipo de Flutter en el desarrollo de una aplicación
+            crypto. Somos la mejor aplicación para hacer seguimientos a tus criptos y portafolios
+            Defi's.
           </p>
         </li>
         <li className="mb-10 ml-6">
-          <span className="absolute -left-3 flex h-6 w-6 items-center justify-center rounded-full bg-blue-200 ring-8 ring-white dark:bg-blue-900 dark:ring-gray-900">
-            <svg
-              className="h-3 w-3 text-blue-600 dark:text-blue-400"
-              fill="currentColor"
-              viewBox="0 0 20 20"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                fillRule="evenodd"
-                d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z"
-                clipRule="evenodd"
-              ></path>
-            </svg>
-          </span>
+          <SvgSpan />
           <h3 className="mb-1 text-lg font-semibold text-gray-900 dark:text-white">
-            Flowbite Library v1.2.2
+            Web3 Engineer - EXA
           </h3>
           <time className="mb-2 block text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
-            Released on December 2nd, 2021
+            Entre Junio 2021 - Junio 2022
           </time>
           <p className="text-base font-normal text-gray-500 dark:text-gray-400">
-            Get started with dozens of web components and interactive elements built on top of
-            Tailwind CSS.
+            En conjunto de varios amigos decidimos emprender en el mundo de los NFT, lanzando
+            colecciones. Adicional comprando y vendiendo diferentes NFT's en etapas tempranas.
+          </p>
+        </li>
+        <li className="mb-10 ml-6">
+          <SvgSpan />
+          <h3 className="mb-1 text-lg font-semibold text-gray-900 dark:text-white">
+            Tech Lead - GeekDevelopers
+          </h3>
+          <time className="mb-2 block text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
+            Entre Agosto 2016 - Mayo 2018
+          </time>
+          <p className="text-base font-normal text-gray-500 dark:text-gray-400">
+            Tuve la oportunidad de aprender diferentes cosas como desarrollador y como líder de
+            equipo, fue una primera etapa llena de diferentes retos y errores. Pero que me ayudaron
+            a crecer como persona.
           </p>
         </li>
       </ol>
