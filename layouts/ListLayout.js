@@ -6,15 +6,21 @@ import Pagination from '@/components/Pagination'
 import formatDate from '@/lib/utils/formatDate'
 
 export default function ListLayout({ posts, title, initialDisplayPosts = [], pagination }) {
+  const now = new Date()
+  const newInitialDisplayPosts = initialDisplayPosts.filter((post) => now >= new Date(post.date))
+
   const [searchValue, setSearchValue] = useState('')
   const filteredBlogPosts = posts.filter((frontMatter) => {
     const searchContent = frontMatter.title + frontMatter.summary + frontMatter.tags.join(' ')
-    return searchContent.toLowerCase().includes(searchValue.toLowerCase())
+    return (
+      searchContent.toLowerCase().includes(searchValue.toLowerCase()) &&
+      now >= new Date(frontMatter.date)
+    )
   })
 
   // If initialDisplayPosts exist, display it if no searchValue is specified
   const displayPosts =
-    initialDisplayPosts.length > 0 && !searchValue ? initialDisplayPosts : filteredBlogPosts
+    newInitialDisplayPosts.length > 0 && !searchValue ? newInitialDisplayPosts : filteredBlogPosts
 
   return (
     <>
@@ -23,6 +29,10 @@ export default function ListLayout({ posts, title, initialDisplayPosts = [], pag
           <h1 className="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
             {title}
           </h1>
+          <p className="text-sm text-gray-700 dark:text-gray-400">
+            Esté blog, es un reto personal, la verdad no me considero experto en ninguna de los
+            temas que voy a tratar acá. Voy a colocar mucho amor, que sean posts de valor.
+          </p>
           <div className="relative max-w-lg">
             <input
               aria-label="Search articles"
@@ -48,7 +58,7 @@ export default function ListLayout({ posts, title, initialDisplayPosts = [], pag
           </div>
         </div>
         <ul>
-          {!filteredBlogPosts.length && 'No posts found.'}
+          {!filteredBlogPosts.length && 'Ops!!, Ningún posts encontrado.'}
           {displayPosts.map((frontMatter) => {
             const { slug, date, title, summary, tags } = frontMatter
             return (
