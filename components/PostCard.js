@@ -10,7 +10,7 @@ import { ViewCountElement } from '@/lib/utils/viewCount'
 export const PostCard = ({ frontMatter }) => {
   const { slug, date, title, summary, tags, readingTime } = frontMatter
 
-  const { data } = useSWR(`/pages/api/views/${slug}`, fetcher)
+  const { data } = useSWR(`/api/views/${slug}`, fetcher)
   const viewCount = data?.total
 
   return (
