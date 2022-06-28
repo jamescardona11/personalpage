@@ -33,7 +33,7 @@ export default function AuthorLayout({ children, frontMatter }) {
       <section className="mt-2 bg-white dark:bg-gray-900">
         <div className="mx-auto max-w-screen-lg dark:bg-gray-900 md:flex">
           <div className="p-2 md:flex md:w-1/3 md:justify-center">
-            <div className="md:fixed">
+            <div className="">
               <div className="flex items-center justify-center md:block">
                 <div className="relative mb-8 mr-auto w-[80px] sm:mb-0 sm:w-[176px]">
                   <Image
@@ -139,10 +139,9 @@ export default function AuthorLayout({ children, frontMatter }) {
           </div>
         </div>
 
-        <h2 className="font-bold text-gray-900 dark:text-white">Gracias a:</h2>
-        <h3 className="text-gray-900  dark:text-white">{thanksToJSX}</h3>
-
         <hr className="my-12 border-gray-200 dark:border-gray-700" />
+        <h2 className="mb-4 font-bold text-gray-900 dark:text-white">Gracias a:</h2>
+        <h3 className="mb-20 text-gray-900 dark:text-white">{thanksToJSX}</h3>
       </section>
     </>
   )

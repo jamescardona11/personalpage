@@ -27,7 +27,7 @@ const siteMetadata = {
   email: 'jjcardonao@gmail.com',
   github: 'https://github.com/jamescardona11',
   twitter: 'https://twitter.com/Twitter',
-  facebook: '',
+  instagram: 'https://www.instagram.com/jamescardona11/',
   cv: 'https://www.dropbox.com/s/69l2vuo9ebjtly2/profile_us.pdf?dl=0',
   notion: 'https://jamescardona11.notion.site/Learning-Path-f43a762b328043269aeb4d6b6d2e31de',
   youtube: 'https://www.youtube.com/channel/UCoDHYabD2zNtMn17x2wu50Q',
@@ -45,7 +45,7 @@ const siteMetadata = {
   newsletter: {
     // supports mailchimp, buttondown, convertkit, klaviyo, revue
     // Please add your .env file and modify it according to your selection
-    provider: 'buttondown',
+    provider: '',
   },
   comment: {
     // If you want to use a commenting system other than giscus you have to add it to the
