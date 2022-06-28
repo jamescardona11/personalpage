@@ -57,7 +57,7 @@ export default function AuthorLayout({ children, frontMatter }) {
                 </div>
                 <div className="my-2 flex text-gray-600 dark:text-blue-100">
                   <Image
-                    alt="linkedin James Cardona"
+                    alt="work James Cardona"
                     height={22}
                     width={22}
                     src="/static/icons/external.svg"

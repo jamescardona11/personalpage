@@ -3,80 +3,69 @@ import Image from './Image'
 import Link from './Link'
 import Tag from '@/components/Tag'
 
-const Card = ({ title, description, imgSrc, href, tag }) => {
-  const [isActive, setIsActive] = useState(true)
+import Folder from '../public/static/icons/folder.svg?inline'
+import Github from '../public/static/icons/github_social.svg?inline'
+import External from '../public/static/icons/external.svg?inline'
+import CustomLink from './Link'
 
-  const handleClick = (event) => {
-    // 👇️ toggle isActive state on click
-    setIsActive((current) => !current)
-  }
-  return (
-    <>
-      <div className="md p-2 md:w-1/2" style={{ maxWidth: '544px' }}>
-        <div className="bg-transparent perspective">
-          <div
-            className={
-              'rounded-md border-2 border-gray-200 border-opacity-60 duration-1000 preserve-3d dark:border-gray-700 ' +
-              (isActive ? 'my-rotate-y-180' : '')
-            }
-          >
-            <div className="backface-hidden">
-              <a
-                className="cursor-pointer text-base font-medium leading-6 text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
-                onClick={handleClick}
-              >
-                Volver
-              </a>
+const Card = ({ title, description, href, github, tags }) => (
+  <div className="md p-4 md:w-1/2" style={{ maxWidth: '544px' }}>
+    <div className="h-full transform overflow-hidden rounded-md border-2 border-solid border-gray-200 bg-transparent bg-opacity-20 transition duration-500 hover:scale-105 hover:rounded-xl hover:border-primary-500 hover:bg-gray-300 dark:border-gray-700 dark:hover:border-primary-500 dark:hover:bg-gray-800">
+      <div className="p-6">
+        <div className="flex flex-row items-center justify-between">
+          <div className="my-2">
+            <Folder className="text-primary-color-500 dark:text-primary-color-dark-500 h-10 w-10" />
+          </div>
+          <div className="flex flex-row justify-between">
+            <div className="mx-1"></div>
+            <div className="mx-1">
+              {href ? (
+                <CustomLink
+                  className="text-sm hover:text-primary-600 dark:hover:text-primary-400"
+                  href={href}
+                >
+                  <Image
+                    alt={'external ' + title}
+                    height={22}
+                    width={22}
+                    src="/static/icons/external.svg"
+                    className="fill-white"
+                  />
+                </CustomLink>
+              ) : null}
             </div>
-            <div className="overflow-hidden bg-white my-rotate-y-180 backface-hidden">
-              <div className="pl-4 pr-4">
-                <h2 className="mb-1 text-2xl font-bold leading-8 tracking-tight hover:underline">
-                  {href ? (
-                    <Link href={href} aria-label={`Link to ${title}`}>
-                      {title}
-                    </Link>
-                  ) : (
-                    title
-                  )}
-                </h2>
-                <div className="mb-3 flex flex-wrap">
-                  <Tag key={tag} text={tag} isEnable="false" />
-                </div>
-                <p className="prose mb-3 max-w-none text-gray-500 dark:text-gray-400">
-                  {description}
-                </p>
-                <div className="mt-4 flex items-center justify-between">
-                  <a className="cursor-pointer text-base font-medium leading-6 text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"></a>
-                  <div className="flex items-center">
-                    {imgSrc &&
-                      (href ? (
-                        <Link href={href} aria-label={`Link to ${title}`}>
-                          <Image
-                            alt={title}
-                            src={imgSrc}
-                            className="mx-4 hidden h-10 w-10 rounded-full object-cover sm:block"
-                            width={80}
-                            height={80}
-                          />
-                        </Link>
-                      ) : (
-                        <Image
-                          alt={title}
-                          src={imgSrc}
-                          className="mx-4 hidden h-10 w-10 rounded-full object-cover sm:block"
-                          width={80}
-                          height={80}
-                        />
-                      ))}
-                  </div>
-                </div>
-              </div>
+            <div className="mx-1">
+              {github ? (
+                <CustomLink
+                  className="text-sm hover:text-primary-600 dark:hover:text-primary-400"
+                  href={github}
+                >
+                  <Image
+                    alt={'github ' + title}
+                    height={22}
+                    width={22}
+                    src="/static/icons/github_social.svg"
+                    className="fill-white"
+                  />
+                </CustomLink>
+              ) : null}
             </div>
           </div>
         </div>
+        <h2 className="mb-3 text-2xl font-bold leading-8 tracking-tight">{title}</h2>
+
+        <p className="prose mb-3 max-w-none text-gray-500 dark:text-gray-400">{description}</p>
+        <div className="flex flex-row justify-start">
+          {tags.map((tag) => (
+            <div key={tag} className="mr-1 text-sm text-gray-400">
+              {' '}
+              &#8226; {tag}
+            </div>
+          ))}
+        </div>
       </div>
-    </>
-  )
-}
+    </div>
+  </div>
+)
 
 export default Card
