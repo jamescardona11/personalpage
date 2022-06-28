@@ -2,6 +2,7 @@ import Link from '@/components/Link'
 import PageTitle from '@/components/PageTitle'
 import SectionContainer from '@/components/SectionContainer'
 import { BlogSEO } from '@/components/SEO'
+// import useViewCounter from '@/lib/hooks/useViewCounter'
 import Image from '@/components/Image'
 import Tag from '@/components/Tag'
 import siteMetadata from '@/data/siteMetadata'
@@ -18,6 +19,8 @@ const postDateTemplate = { year: 'numeric', month: 'long', day: 'numeric' }
 
 export default function PostLayout({ frontMatter, authorDetails, next, prev, children }) {
   const { slug, fileName, date, title, images, tags, readingTime } = frontMatter
+
+  // const viewCount = useViewCounter({ slug: slug })
 
   return (
     <SectionContainer>
@@ -84,7 +87,7 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
                   <dt className="sr-only">Published on</dt>
                   <dd className="text-base font-medium leading-6 text-gray-500 dark:text-gray-400">
                     <time dateTime={date}>
-                      📅 {new Date(date).toLocaleDateString(siteMetadata.locale, postDateTemplate)}
+                      {new Date(date).toLocaleDateString(siteMetadata.locale, postDateTemplate)}
                     </time>
                   </dd>
                 </div>

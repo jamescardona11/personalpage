@@ -6,6 +6,7 @@ import CustomLink from './Link'
 
 import Github from '../public/static/icons/github.svg?inline'
 import Linkedin from '../public/static/icons/linkedin.svg?inline'
+import External from '../public/static/icons/external.svg?inline'
 
 export default function Footer() {
   return (
