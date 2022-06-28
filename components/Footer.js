@@ -4,45 +4,23 @@ import siteMetadata from '@/data/siteMetadata'
 import NewsletterForm from '@/components/NewsletterForm'
 import CustomLink from './Link'
 
+import Github from '../public/static/icons/github.svg?inline'
+import Linkedin from '../public/static/icons/linkedin.svg?inline'
+
 export default function Footer() {
   return (
     <footer>
       <div className="flex flex-row justify-start">
         <div className="mt-16 flex flex-col items-start ">
           <div className="mb-3 flex flex-wrap">
-            <Link href={siteMetadata.github} aria-label="github">
-              <>
-                <Image
-                  alt="github James Cardona"
-                  height={30}
-                  width={30}
-                  src="/static/icons/github.svg"
-                  className="fill-current text-gray-700 hover:text-blue-500 dark:text-gray-200 dark:hover:text-blue-400"
-                />
-              </>
-            </Link>
+            <CustomLink href={siteMetadata.github} aria-label="github">
+              <Github className="h-6 w-6" />
+            </CustomLink>
             <div className="mr-2 ml-2" />
             <Link href={siteMetadata.linkedin} aria-label="linkedin">
-              <Image
-                alt="linkedin James Cardona"
-                height={30}
-                width={30}
-                src="/static/icons/linkedin.svg"
-                className="fill-white"
-              />
+              <Linkedin className="h-6 w-6" />
             </Link>
             <div className="mr-2 ml-2" />
-            <Link href={siteMetadata.notion} aria-label="notion">
-              <>
-                <Image
-                  alt="notion James Cardona"
-                  height={30}
-                  width={30}
-                  src="/static/icons/notion.svg"
-                  className="fill-white"
-                />
-              </>
-            </Link>
           </div>
           <div className="mb-2 flex space-x-2 text-sm text-gray-500 dark:text-gray-400">
             <div>{siteMetadata.author}</div>
@@ -108,13 +86,13 @@ export default function Footer() {
             </CustomLink>
             <CustomLink
               className="text-sm hover:text-primary-600 dark:hover:text-primary-400"
-              href={siteMetadata.siteRepo}
+              href={siteMetadata.cv}
             >
               CV
             </CustomLink>
             <CustomLink
               className="text-sm hover:text-primary-600 dark:hover:text-primary-400"
-              href={siteMetadata.cv}
+              href={siteMetadata.notion}
             >
               Notion
             </CustomLink>

@@ -122,6 +122,17 @@ export default function AuthorLayout({ children, frontMatter }) {
               <p className="text-justify dark:bg-gray-800 dark:text-blue-200">
                 - Jugador aficionado de poker ♠️
               </p>
+              <p className="text-justify dark:bg-gray-800 dark:text-blue-200">
+                - Mi learning path{' '}
+                <a
+                  className="font-semibold text-primary-500"
+                  href={siteMetadata.notion}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Notion
+                </a>
+              </p>
 
               <br />
             </div>
