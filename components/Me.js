@@ -35,7 +35,7 @@ const Me = () => {
             </RoughNotation>
             hacer algunos {''}
             <Link href="/projects">
-              <span className="cursor-pointer text-base font-medium  leading-6 text-primary-500">
+              <span className="cursor-pointer text-base font-medium leading-6 text-primary-500">
                 side-projects
               </span>
             </Link>

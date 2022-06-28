@@ -13,9 +13,11 @@ import { PathType, SvgPathRounded } from '@/components/SvgPath'
 import { Expertise } from './components/Expertise'
 
 import Mail from '../public/static/icons/mail.svg?inline'
+import External from '../public/static/icons/external.svg?inline'
 import Glob from '../public/static/icons/glob.svg?inline'
 import CV from '../public/static/icons/external.svg?inline'
-import Github from '../public/static/icons/github_new.svg?inline'
+import Github from '../public/static/icons/github.svg?inline'
+import Linkedin from '../public/static/icons/linkedin.svg?inline'
 import Link from 'node_modules/next/link'
 
 export default function AuthorLayout({ children, frontMatter }) {
@@ -56,13 +58,7 @@ export default function AuthorLayout({ children, frontMatter }) {
                   <Mail /> <a href="`mailto:${siteMetadata.email}`"> {siteMetadata.email}</a>
                 </div>
                 <div className="my-2 flex text-gray-600 dark:text-blue-100">
-                  <Image
-                    alt="work James Cardona"
-                    height={22}
-                    width={22}
-                    src="/static/icons/external.svg"
-                    className="fill-white"
-                  />{' '}
+                  <External className="h-6 w-6" />
                   <a
                     className="font-semibold text-primary-500"
                     href={siteMetadata.cv}
@@ -79,19 +75,14 @@ export default function AuthorLayout({ children, frontMatter }) {
                   </a>
                 </div>
                 <div className="my-2 flex text-gray-600 dark:text-blue-200">
-                  <Github />
+                  <Github className="h-6 w-6" />
+
                   <a href={siteMetadata.github} target="_blank" rel="noreferrer">
                     @Github
                   </a>
                 </div>
                 <div className="my-2 flex text-gray-600 dark:text-blue-200">
-                  <Image
-                    alt="linkedin James Cardona"
-                    height={22}
-                    width={22}
-                    src="/static/icons/linkedin.svg"
-                    className="fill-white"
-                  />
+                  <Linkedin className="h-6 w-6" />
                   <a href={siteMetadata.linkedin} target="_blank" rel="noreferrer">
                     @LinkedIn
                   </a>

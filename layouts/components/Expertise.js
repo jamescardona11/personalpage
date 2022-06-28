@@ -1,5 +1,5 @@
 import React from 'react'
-import { useTheme } from 'next-themes'
+
 import { PathType, SvgPathRounded } from '@/components/SvgPath'
 
 import Android from '../../public/static/skills/android.svg?inline'
@@ -13,10 +13,9 @@ import Solidity from '../../public/static/skills/solidity.svg?inline'
 import SolidityWhite from '../../public/static/skills/solidity_white.svg?inline'
 import Git from '../../public/static/skills/git.svg?inline'
 import Kotlin from '../../public/static/skills/kotlin.svg?inline'
+import SkillIcon from '@/components/SkillIcon'
 
 export const Expertise = ({ githubStats }) => {
-  const { theme, setTheme, resolvedTheme } = useTheme()
-  const isDark = theme === 'dark'
   return (
     <div className="mt-8">
       <div className="my-2 flex text-gray-600 dark:text-blue-200">
@@ -28,38 +27,34 @@ export const Expertise = ({ githubStats }) => {
 
       <ul className="flex flex-wrap items-center gap-4">
         <li className="flex items-center">
-          <Flutter className="h-10 w-10"></Flutter>
+          <SkillIcon kind="flutter" />
         </li>
         <li className="flex items-center">
-          <Clojure className="h-10 w-10"></Clojure>
+          <SkillIcon kind="Clojure" />
         </li>
         <li className="flex items-center">
-          <Javascript className="h-10 w-10"></Javascript>
+          <SkillIcon kind="Javascript" />
         </li>
         <li className="flex items-center">
-          <Node className="h-10 w-10"></Node>
+          <SkillIcon kind="node" />
         </li>
         <li className="flex items-center">
-          <Py className="h-10 w-10"></Py>
+          <SkillIcon kind="python" />
         </li>
         <li className="flex items-center">
-          <Reactjs className="h-10 w-10"></Reactjs>
+          <SkillIcon kind="Reactjs" />
         </li>
         <li className="flex items-center">
-          <Android className="h-10 w-10"></Android>
+          <SkillIcon kind="Android" />
         </li>
         <li className="flex items-center">
-          {isDark ? (
-            <SolidityWhite className="h-10 w-10"></SolidityWhite>
-          ) : (
-            <Solidity className="h-10 w-10"></Solidity>
-          )}
+          <SkillIcon kind="web3" />
         </li>
         <li className="flex items-center">
-          <Kotlin className="h-10 w-10"></Kotlin>
+          <SkillIcon kind="Kotlin" />
         </li>
         <li className="flex items-center">
-          <Git className="h-10 w-10"></Git>
+          <SkillIcon kind="git" />
         </li>
       </ul>
 

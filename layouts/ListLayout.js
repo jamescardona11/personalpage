@@ -31,7 +31,7 @@ export default function ListLayout({ posts, title, initialDisplayPosts = [], pag
           </h1>
           <p className="text-sm text-gray-700 dark:text-gray-400">
             Esté blog, es un reto personal, la verdad no me considero experto en ninguna de los
-            temas que voy a tratar acá. Voy a colocar mucho amor, que sean posts de valor.
+            temas que voy a tratar acá. Voy a colocar mucho amor, esperó que sean posts de valor.
           </p>
           <div className="relative max-w-lg">
             <input
