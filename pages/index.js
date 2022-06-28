@@ -1,5 +1,6 @@
 import Image from '@/components/Image'
 import Link from '@/components/Link'
+import { PostCard } from '@/components/PostCard'
 import { PageSEO } from '@/components/SEO'
 import Tag from '@/components/Tag'
 import siteMetadata from '@/data/siteMetadata'
@@ -31,42 +32,9 @@ export default function Home({ posts }) {
         </div>
         <ul className="divide-y divide-gray-200 dark:divide-gray-700">
           {!newPosts.length && 'No posts found.'}
-          {newPosts.slice(0, MAX_DISPLAY).map((frontMatter) => {
-            const { slug, date, title, tags } = frontMatter
-            return (
-              <li key={slug} className="py-4">
-                <article>
-                  <div className="space-y-2 xl:grid xl:grid-cols-4 xl:items-baseline xl:space-y-0">
-                    <dl>
-                      <dt className="sr-only">Published on</dt>
-                      <dd className="text-base font-medium leading-6 text-gray-500 dark:text-gray-400">
-                        <time dateTime={date}>{formatDate(date)}</time>
-                      </dd>
-                    </dl>
-                    <div className="space-y-5 xl:col-span-3">
-                      <div className="space-y-6">
-                        <div>
-                          <h2 className="text-2xl font-bold leading-8 tracking-tight">
-                            <Link
-                              href={`/blog/${slug}`}
-                              className="text-gray-900 dark:text-gray-100"
-                            >
-                              {title}
-                            </Link>
-                          </h2>
-                          <div className="flex flex-wrap">
-                            {tags.map((tag) => (
-                              <Tag key={tag} text={tag} />
-                            ))}
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </article>
-              </li>
-            )
-          })}
+          {newPosts.slice(0, MAX_DISPLAY).map((frontMatter) => (
+            <PostCard key={frontMatter.title} frontMatter={frontMatter} />
+          ))}
         </ul>
       </div>
       {posts.length > MAX_DISPLAY && (

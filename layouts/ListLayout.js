@@ -3,7 +3,7 @@ import Tag from '@/components/Tag'
 import siteMetadata from '@/data/siteMetadata'
 import { useState } from 'react'
 import Pagination from '@/components/Pagination'
-import { PostCard } from './components/PostCard'
+import { PostCard } from '@/components/PostCard'
 
 export default function ListLayout({ posts, title, initialDisplayPosts = [], pagination }) {
   const now = new Date()
