@@ -7,6 +7,7 @@ summary: Hacer aplicaciones en flutter web es muy fácil con todo lo que aprende
 ---
 
 # Flutter responsive - Parte #1
+
 <p><a href="/uri" title="title">link</a></p>
 Hacer aplicaciones en es un tarea sencilla y generalmente orientada a dispositivos móviles pero que pasa cuando la aplicación se extiende a tablets o web, generalmente el responsive es obligatorio hoy en día y en las aplicaciones móviles solo que en casos muy puntuales debemos hacer cambios para que se adapte nuestra UI pero en general no es una preocupación.
 
@@ -17,25 +18,25 @@ La verdad no es algo muy complejo, existen muchas librerías que nos ayudan a so
   <img src="/static/images/flutter-web/responsive_example.gif" width="450" />
 </p>
 
-
 ### Estrategia para hacer una app responsive
 
-Esta se base en tener puntos de control, voy a listar algunas ideas para estos puntos de control: 
+Esta se base en tener puntos de control, voy a listar algunas ideas para estos puntos de control:
 
-1) El tamaño de la pantalla cambia, estos puntos nos darán una alerta depara adaptar al UI a una tamaño de pantalla diferente.
-2) La orientación cambia, usaremos algo para que nos dé una alerta de cuando debemos adaptar a una orientación diferente.
-3) Puntos de control condicionales, son puntos de control específicos de condiciones, ejemplo si el dispositivo es web o mobile, mostrar o ocultar un widget dependiendo de una condición.
+1. El tamaño de la pantalla cambia, estos puntos nos darán una alerta depara adaptar al UI a una tamaño de pantalla diferente.
+2. La orientación cambia, usaremos algo para que nos dé una alerta de cuando debemos adaptar a una orientación diferente.
+3. Puntos de control condicionales, son puntos de control específicos de condiciones, ejemplo si el dispositivo es web o mobile, mostrar o ocultar un widget dependiendo de una condición.
 
 ### ¿Qué tiene flutter para esto?
 
 Lo que más me gusta de flutter es que ya tiene muchas cosas listas, vamos a listar que vamos a usar. Luego los usaremos para desarrollar una app.
 
-- LayoutBuilder **(Este es el más importante)
+- LayoutBuilder \*\*(Este es el más importante)
 - OrientationBuilder
 - Visibility
 - MediaQuery
 
 Otros:
+
 - FittedBox
 - AspectRatio
 - FractionallySizedBox
@@ -45,6 +46,7 @@ Otros:
 Puedes encontrar algunos ejemplos y otros widgets al final en las referencias.
 
 #### 1. MediaQuery
+
 Puedes usar MediaQuery para obtener el tamaño de la pantalla, el padding y muchas otras cosas.
 Es un widget muy importante para manejar algunas medidas en porcentajes de pantalla.
 
@@ -53,7 +55,6 @@ Size mSize = MediaQuery.of(context).size;
 EdgeInsets mPadding = MediaQuery.of(context).padding;
 Orientation mOrientation = MediaQuery.of(context).orientation;
 ```
-
 
 #### 2. Visibility
 
@@ -71,7 +72,7 @@ Visibility(
 
 Con esto podemos hacer un re-build reaccionando a la "orientación" de un widget. Quiere esto decir si el tamaño de un widget corresponde es su AspectRation más a un widget _landscape_ o _portrait_.
 
-** Importa esta orientación es diferente a la del MediaQuery
+\*\* Importa esta orientación es diferente a la del MediaQuery
 El orientation del MediaQuery hace referencia a la orientación del dispositivo.
 
 ```dart:OrientationBuilder
@@ -139,7 +140,7 @@ class HomePage extends StatelessWidget {
 
 En mi opinión es la herramienta más útil después de MediaQuery para poder hacer muchas cosas de la orientación, por medio de este podemos calcular el maxWidth y el maxHeight de un widget específico.
 
-** Importa esta tamaño es diferente a la del MediaQuery.
+\*\* Importa esta tamaño es diferente a la del MediaQuery.
 
 ```dart:LayoutBuilder
 LayoutBuilder(
@@ -157,10 +158,9 @@ LayoutBuilder(
 
 Si eres nuevo y aun no conoces bien el funcionamiento de **Row**, **Column**, **Flexible**, **Expanded**, te dejo acá unas referencias para complementar:
 
-- [Column vs Row][columnvsrow] 
+- [Column vs Row][columnvsrow]
 - [Expanded vs Flexible][expandedvsflexible]
 - [AspectRatio][aspectratio]
-
 
 ### Empecemos a crear nuestra app
 
@@ -173,25 +173,21 @@ Este post trata de responsive así que no me voy a detener mucho en como desarro
 2. Puedes usar este [repositorio][] en la rama (**base-web-responsive**), con los widgets para construir paso a paso el panel.
 3. Puedes usar este [repositorio][] la rama (**dashboard-web-responsive**), con el panel listo en web y saltar hasta la sección, **Empecemos el responsive**.
 
-
 <p align="center" width="100%">
   <img src="/static/images/flutter-web/ui_dashboard.png" width="450" />
 </p>
 
-
-
 ### Empecemos el responsive
-
 
 ### Referencias
 
 - Flutter: https://docs.flutter.dev/development/ui/layout/adaptive-responsive
 - CodeMagic: https://blog.codemagic.io/building-responsive-applications-with-flutter/
-
+- Youtube: https://www.youtube.com/watch?v=p9Q9w-523t4
 
 [//]: #Ref
-[figma-ref]: <https://www.figma.com/community/file/1120470173523939363>
-[github]: </static/images/flutter-web/ui_dashboard.png>
-[columnvsrow]: <https://medium.com/jlouage/flutter-row-column-cheat-sheet-78c38d242041>
-[expandedvsflexible]: <https://itnext.io/flutter-responsive-apps-flexible-vs-expanded-ff8cc92b468f>
-[aspectratio]: <https://api.flutter.dev/flutter/widgets/AspectRatio-class.html>
+[figma-ref]: https://www.figma.com/community/file/1120470173523939363
+[github]: /static/images/flutter-web/ui_dashboard.png
+[columnvsrow]: https://medium.com/jlouage/flutter-row-column-cheat-sheet-78c38d242041
+[expandedvsflexible]: https://itnext.io/flutter-responsive-apps-flexible-vs-expanded-ff8cc92b468f
+[aspectratio]: https://api.flutter.dev/flutter/widgets/AspectRatio-class.html
