@@ -18,7 +18,7 @@ import Glob from '../public/static/icons/glob.svg?inline'
 import CV from '../public/static/icons/external.svg?inline'
 import Github from '../public/static/icons/github.svg?inline'
 import Linkedin from '../public/static/icons/linkedin.svg?inline'
-import Link from 'node_modules/next/link'
+import Link from 'next/link'
 
 export default function AuthorLayout({ children, frontMatter }) {
   const { name, aboutMe, thanksTo, routine } = frontMatter

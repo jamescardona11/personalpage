@@ -10,7 +10,7 @@ import Footer from './Footer'
 import MobileNav from './MobileNav'
 import ThemeSwitch from './ThemeSwitch'
 
-import Image from 'node_modules/next/image'
+import Image from 'next/image'
 import CustomLink from './Link'
 
 const LayoutWrapper = ({ children }) => {

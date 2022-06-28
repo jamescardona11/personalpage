@@ -2,7 +2,8 @@ import Image from '@/components/Image'
 import siteMetadata from '@/data/siteMetadata'
 import { stringToJSX } from '../lib/utils/stringToJSX'
 import { RoughNotation } from 'react-rough-notation'
-import Link from 'node_modules/next/link'
+import Link from 'next/link'
+import CustomLink from './Link'
 
 const Me = () => {
   const roleToJSX = stringToJSX({ text: siteMetadata.role })
@@ -34,11 +35,11 @@ const Me = () => {
               me gusta aprender nuevas cosas,&nbsp;
             </RoughNotation>
             hacer algunos {''}
-            <Link href="/projects">
+            <CustomLink href="/projects">
               <span className="cursor-pointer text-base font-medium leading-6 text-primary-500">
                 side-projects
               </span>
-            </Link>
+            </CustomLink>
             {''} y recientemente crear algunos post para este{' '}
             <Link href="/blog">
               <span className="cursor-pointer text-base font-medium leading-6 text-primary-500">
