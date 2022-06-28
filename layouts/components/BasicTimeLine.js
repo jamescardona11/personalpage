@@ -12,7 +12,7 @@ export const BasicTimeLine = () => {
           <SvgSpan />
           <h3 className="mb-1 flex items-center text-lg font-semibold text-gray-900 dark:text-white">
             Flutter Developer - 57Blocks
-            <span className="mr-2 ml-3 rounded bg-blue-100 px-2.5 py-0.5 text-sm font-medium text-blue-800 dark:bg-blue-200 dark:text-blue-800">
+            <span className="mr-2 ml-3 rounded bg-primary-100 px-2.5 py-0.5 text-sm font-medium text-primary-800 dark:bg-primary-200 dark:text-primary-800">
               Actual
             </span>
           </h3>

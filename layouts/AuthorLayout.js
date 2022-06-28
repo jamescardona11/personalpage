@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { RoughNotation } from 'react-rough-notation'
 
 import Image from '@/components/Image'
 import siteMetadata from '@/data/siteMetadata'
@@ -110,8 +111,18 @@ export default function AuthorLayout({ children, frontMatter }) {
                 <span className="ml-1 inline-block h-1 w-3 rounded-full bg-primary-500"></span>
                 <span className="ml-1 inline-block h-1 w-1 rounded-full bg-primary-500"></span>
               </div>
-              <p className="mt-8 mb-4 text-justify dark:bg-gray-800 dark:text-blue-200">
-                {aboutMeJSX}
+
+              <p className="mt-4 mb-4 text-justify dark:bg-gray-800 dark:text-blue-200">
+                <RoughNotation
+                  type="bracket"
+                  brackets={['left', 'right']}
+                  show={true}
+                  color="#a955f7"
+                  animationDelay={200}
+                  animationDuration={1200}
+                >
+                  {aboutMeJSX}
+                </RoughNotation>
               </p>
 
               <p className="mt-4 text-justify dark:bg-gray-800 dark:text-blue-200">

@@ -3,13 +3,13 @@ import React from 'react'
 export const SvgPathRounded = ({ path, path2 }) => {
   return (
     <>
-      <span className="inline-block rounded-xl bg-blue-100 p-2 text-blue-500 dark:bg-blue-500 dark:text-white md:mr-4">
+      <span className="inline-block rounded-xl bg-primary-100 p-2 text-blue-500 dark:bg-primary-500 dark:text-white md:mr-4">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           className="h-6 w-6"
           fill="none"
           viewBox="0 0 24 24"
-          stroke="currentColor"
+          stroke="#a955f7"
         >
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d={path} />
           (path2 != null &&
@@ -23,10 +23,10 @@ export const SvgPathRounded = ({ path, path2 }) => {
 export const SvgSpan = ({ path, path2, path3 }) => {
   return (
     <>
-      <span className="absolute -left-3 flex h-6 w-6 items-center justify-center rounded-full bg-blue-200 ring-8 ring-white dark:bg-blue-900 dark:ring-gray-900">
+      <span className="absolute -left-3 flex h-6 w-6 items-center justify-center rounded-full bg-primary-200 ring-8 ring-white dark:bg-primary-900 dark:ring-gray-900">
         <svg
           className="h-3 w-3 text-blue-600 dark:text-blue-400"
-          fill="currentColor"
+          fill="#a955f7"
           viewBox="0 0 20 20"
           xmlns="http://www.w3.org/2000/svg"
         >
