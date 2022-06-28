@@ -14,10 +14,10 @@ const discussUrl = (slug) =>
     `${siteMetadata.siteUrl}/blog/${slug}`
   )}`
 
-const postDateTemplate = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' }
+const postDateTemplate = { year: 'numeric', month: 'long', day: 'numeric' }
 
 export default function PostLayout({ frontMatter, authorDetails, next, prev, children }) {
-  const { slug, fileName, date, title, images, tags, more } = frontMatter
+  const { slug, fileName, date, title, images, tags, readingTime } = frontMatter
 
   return (
     <SectionContainer>
@@ -33,6 +33,42 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
             <div className="space-y-1 text-center">
               <div>
                 <PageTitle>{title}</PageTitle>
+                <div className="flex justify-center gap-5 py-4">
+                  <span className="flex items-center gap-1">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="h-5 w-5"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z"
+                      />
+                    </svg>
+                    {readingTime.words} words
+                  </span>
+                  <span className="flex items-center gap-1">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="h-5 w-5"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                      />
+                    </svg>
+                    {readingTime.text}
+                  </span>
+                </div>
                 {tags && (
                   <div className="py-2">
                     <div className="flex flex-wrap justify-center">
@@ -48,7 +84,7 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
                   <dt className="sr-only">Published on</dt>
                   <dd className="text-base font-medium leading-6 text-gray-500 dark:text-gray-400">
                     <time dateTime={date}>
-                      {new Date(date).toLocaleDateString(siteMetadata.locale, postDateTemplate)}
+                      📅 {new Date(date).toLocaleDateString(siteMetadata.locale, postDateTemplate)}
                     </time>
                   </dd>
                 </div>
@@ -61,7 +97,7 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
           >
             {authorDetails.length == 1 && authorDetails[0].name != siteMetadata.author && (
               <dl className="pt-6 pb-10 xl:border-b xl:border-gray-200 xl:pt-11 xl:dark:border-gray-700">
-                <dt className="sr-only">Authors</dt>
+                <dt className="sr-only">Autores</dt>
                 <dd>
                   <ul className="flex justify-center space-x-8 sm:space-x-12 xl:block xl:space-x-0 xl:space-y-8">
                     {authorDetails.map((author) => (
@@ -76,7 +112,7 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
                           />
                         )}
                         <dl className="whitespace-nowrap text-sm font-medium leading-5">
-                          <dt className="sr-only">Name</dt>
+                          <dt className="sr-only">Nombre</dt>
                           <dd className="text-gray-900 dark:text-gray-100">{author.name}</dd>
                           <dt className="sr-only">Twitter</dt>
                           <dd>

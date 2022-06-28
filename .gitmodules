@@ -1,0 +1,3 @@
+[submodule "my-blog-tutorials"]
+	path = my-blog-tutorials
+	url = git@github.com:jamescardona11/my-blog-tutorials.git
