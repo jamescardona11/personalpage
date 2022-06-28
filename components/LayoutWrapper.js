@@ -19,11 +19,14 @@ const LayoutWrapper = ({ children }) => {
   const mapHeaderNavLinks = {
     '/': '/',
     '/blog': 'Blog',
+    '/post': 'Post',
     '/tags': 'Tags',
     '/coming': 'Cursos',
     '/projects': 'Proyectos',
     '/about': 'Acerca de mi',
   }
+
+  const asPath = router.asPath.includes('/blog/') ? '/post' : router.asPath
 
   return (
     <SectionContainer>
@@ -40,7 +43,8 @@ const LayoutWrapper = ({ children }) => {
                   className="fill-white"
                 />
                 <a className="mr-2"></a>
-                {`~${mapHeaderNavLinks[router.asPath] ?? '/'}`}
+
+                {`~${mapHeaderNavLinks[asPath] ?? '/'}`}
                 <Typewriter
                   options={{
                     strings: [],

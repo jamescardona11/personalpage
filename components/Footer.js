@@ -77,13 +77,13 @@ export default function Footer() {
             </CustomLink>
           </div>
           <div className="flex flex-col space-y-4 md:items-start">
-            <p className="text-sm font-bold">Showcase</p>
-            <CustomLink
+            <p className="text-sm font-bold">Misc</p>
+            {/* <CustomLink
               className="text-sm hover:text-primary-600 dark:hover:text-primary-400"
               href={siteMetadata.siteRepo}
             >
               OpenSource
-            </CustomLink>
+            </CustomLink> */}
             <CustomLink
               className="text-sm hover:text-primary-600 dark:hover:text-primary-400"
               href={siteMetadata.cv}

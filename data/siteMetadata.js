@@ -20,7 +20,7 @@ const siteMetadata = {
   theme: 'system', // system, dark or light
 
   siteUrl: 'jamescardona11.com',
-  siteRepo: 'https://github.com/jamescardona11/jamescardona-app',
+  siteRepo: 'https://github.com/jamescardona11/my-personal-page',
   siteLogo: '/static/images/logo.png',
   image: '/static/images/avatar.png',
   socialBanner: '/static/images/twitter-card.png',
