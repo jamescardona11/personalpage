@@ -115,10 +115,19 @@ export default function AuthorLayout({ children, frontMatter }) {
                   {aboutMeJSX}
                 </RoughNotation>
               </p>
+              <RoughNotation
+                animationDelay="1000"
+                animationDuration="3000"
+                type="highlight"
+                color="#a955f7"
+                strokeWidth="3"
+                show={true}
+              >
+                <p className="mt-4 text-justify font-bold text-white dark:bg-gray-800">
+                  - No parar de aprender
+                </p>
+              </RoughNotation>
 
-              <p className="mt-4 text-justify dark:bg-gray-800 dark:text-blue-200">
-                - No parar de aprender
-              </p>
               <p className="text-justify dark:bg-gray-800 dark:text-blue-200">
                 - Jugador aficionado de poker ♠️
               </p>

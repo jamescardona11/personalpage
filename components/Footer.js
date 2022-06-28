@@ -18,9 +18,9 @@ export default function Footer() {
               <Github className="h-6 w-6" />
             </CustomLink>
             <div className="mr-2 ml-2" />
-            <Link href={siteMetadata.linkedin} aria-label="linkedin">
+            <CustomLink href={siteMetadata.linkedin} aria-label="linkedin">
               <Linkedin className="h-6 w-6" />
-            </Link>
+            </CustomLink>
             <div className="mr-2 ml-2" />
           </div>
           <div className="mb-2 flex space-x-2 text-sm text-gray-500 dark:text-gray-400">
