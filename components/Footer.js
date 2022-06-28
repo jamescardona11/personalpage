@@ -22,15 +22,13 @@ export default function Footer() {
             </Link>
             <div className="mr-2 ml-2" />
             <Link href={siteMetadata.linkedin} aria-label="linkedin">
-              <>
-                <Image
-                  alt="linkedin James Cardona"
-                  height={30}
-                  width={30}
-                  src="/static/icons/linkedin.svg"
-                  className="fill-white"
-                />
-              </>
+              <Image
+                alt="linkedin James Cardona"
+                height={30}
+                width={30}
+                src="/static/icons/linkedin.svg"
+                className="fill-white"
+              />
             </Link>
             <div className="mr-2 ml-2" />
             <Link href={siteMetadata.notion} aria-label="notion">

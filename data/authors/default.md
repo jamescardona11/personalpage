@@ -1,6 +1,6 @@
 ---
 name: James Cardona
-aboutMe: Soy Ingeniero de Sistemas, apasionado por la tecnología, videojuegos y un entusiasta del mundo cripto y NFTs.<><br><><br><>Me gusto mucho aprender cosas nuevas, entre esas cosas obvio está la tecnología, pero adicional disfruto la comida y pasar tiempo con mis 🐶 🐶, amigos y familia.<><br><><br><>- Como dato curioso me gusta el Poker ♠️<><br><>- Puedes descargar mi dando click acá <>[CV][cv]<><br><>- Si necesitas contactarme usa <>[LinkedIn][linkedin]
+aboutMe: Soy Ingeniero de Sistemas, apasionado por la tecnología, videojuegos y un entusiasta del mundo cripto y NFTs.<><br><><br><>Me gusto mucho aprender cosas nuevas, entre esas cosas obvio está la tecnología, pero adicional disfruto la comida y pasar tiempo con mis 🐶 🐶, amigos y familia.<><br><><br><>- Como dato curioso me gusta el Poker ♠️
 insight1: Trabajo Actual
 insightDesc1: Actualmente trabajo como Software Engineer en <>[57blocks.]https://57blocks.io/.<><br><>Mi rol principal es Lead Flutter developer para <>[Tokenpad.]https://tokenpad.io/<>
 insight2: Objetivos

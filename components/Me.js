@@ -17,9 +17,9 @@ const Me = () => {
 
           <h2 className="mb-4 text-gray-900 dark:text-white">{roleToJSX}</h2>
           <p className="text-gray-800 dark:text-gray-200">
-            Bienvenidos a mi personal website, donde comparto un poco más acerca de mí. Soy Software
-            Engineer apasionado por la tecnología, videojuegos y un entusiasta del mundo Cripto y
-            NFTs
+            Bienvenidos a mi personal website, donde comparto un poco más acerca de mí. Tech
+            Explorer | Apasionado por la tecnología, videojuegos y un entusiasta del mundo Cripto y
+            NFTs.
           </p>
           <br />
           <p className="text-gray-800 dark:text-gray-200">
@@ -41,7 +41,7 @@ const Me = () => {
             </Link>
             {''} y recientemente crear algunos post para este{' '}
             <Link href="/blog">
-              <span className="cursor-pointer text-base font-medium  leading-6 text-primary-500">
+              <span className="cursor-pointer text-base font-medium leading-6 text-primary-500">
                 blog.
               </span>
             </Link>
@@ -56,37 +56,3 @@ const Me = () => {
 }
 
 export default Me
-
-{
-  /* <div className="flex text-base text-sm leading-6">
-<Link
-  href={siteMetadata.cv}
-  className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
-  aria-label="download cv"
->
-  Descargar CV
-</Link>
-</div>
-<button className="mt-3 mb-16 inline-flex items-center rounded bg-primary-600 py-3 px-6 font-bold text-white hover:bg-primary-800">
-<svg
-  className="mr-2 h-4 w-4 fill-current"
-  xmlns="http://www.w3.org/2000/svg"
-  viewBox="0 0 20 20"
->
-  <path d="M13 8V2H7v6H2l8 8 8-8h-5zM0 18h20v2H0v-2z" />
-</svg>
-<span>Download CV</span>
-</button>  */
-}
-
-{
-  /* <div className="relative mb-8 mr-auto w-[80px] sm:mb-0 sm:w-[176px]">
-<Image
-  alt={siteMetadata.author}
-  height={176}
-  width={176}
-  src={siteMetadata.profileImage}
-  className="rounded-full grayscale filter"
-/>
-</div> */
-}
