@@ -3,7 +3,7 @@ import React from 'react'
 export const SvgPathRounded = ({ path, path2 }) => {
   return (
     <>
-      <span className="inline-block rounded-xl bg-blue-100 p-2 text-blue-500 dark:bg-blue-500 dark:text-white md:mx-4">
+      <span className="inline-block rounded-xl bg-blue-100 p-2 text-blue-500 dark:bg-blue-500 dark:text-white md:mr-4">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           className="h-6 w-6"

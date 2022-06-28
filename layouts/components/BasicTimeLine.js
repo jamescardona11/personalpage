@@ -4,10 +4,10 @@ import { stringToJSX } from '@/lib/utils/stringToJSX'
 export const BasicTimeLine = () => {
   return (
     <>
-      <h3 className="mb-8 text-gray-900  dark:text-white">
+      <h3 className="mb-8 mt-8 text-gray-900  dark:text-white">
         Si quieres ver todo el timeline visita mi LinkedIn
       </h3>
-      <ol className="relative border-l border-gray-200 dark:border-gray-700">
+      <ol className="relative ml-4 border-l border-gray-200 dark:border-gray-700">
         <li className="mb-10 ml-6">
           <SvgSpan />
           <h3 className="mb-1 flex items-center text-lg font-semibold text-gray-900 dark:text-white">

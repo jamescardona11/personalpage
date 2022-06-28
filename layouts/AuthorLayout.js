@@ -1,14 +1,15 @@
 import { useState } from 'react'
 
-import { PageSEO } from '@/components/SEO'
+import Image from '@/components/Image'
 import siteMetadata from '@/data/siteMetadata'
+
+import { PageSEO } from '@/components/SEO'
 import { stringToJSX } from '@/lib/utils/stringToJSX'
-import { InsightsSection, InsightType } from './components/InsightsSection'
+
 import { Skills } from './components/Skills'
 import { BasicTimeLine } from './components/BasicTimeLine'
-import { DownloadButton } from './components/DownloadButton'
-import { TabsSection } from './components/TabsSection'
-import Image from '@/components/Image'
+import { PathType, SvgPathRounded } from '@/components/SvgPath'
+import { Expertise } from './components/Expertise'
 
 import Mail from '../public/static/icons/mail.svg?inline'
 import Glob from '../public/static/icons/glob.svg?inline'
@@ -18,9 +19,11 @@ import Link from 'node_modules/next/link'
 
 export default function AuthorLayout({ children, frontMatter }) {
   const { name, aboutMe, thanksTo, routine } = frontMatter
+  const { insight1, insightDesc1, insight2, insightDesc2 } = frontMatter
 
   const aboutMeJSX = stringToJSX({ text: aboutMe })
   const thanksToJSX = stringToJSX({ text: thanksTo })
+  const insightDesc1oJSX = stringToJSX({ text: insightDesc1 })
 
   return (
     <>
@@ -79,7 +82,7 @@ export default function AuthorLayout({ children, frontMatter }) {
                   <a href={siteMetadata.github} target="_blank" rel="noreferrer">
                     @Github
                   </a>
-                </div>{' '}
+                </div>
                 <div className="my-2 flex text-gray-600 dark:text-blue-200">
                   <Image
                     alt="linkedin James Cardona"
@@ -110,17 +113,20 @@ export default function AuthorLayout({ children, frontMatter }) {
               <p className="mt-8 mb-4 text-justify dark:bg-gray-800 dark:text-blue-200">
                 {aboutMeJSX}
               </p>
+
+              <p className="mt-4 text-justify dark:bg-gray-800 dark:text-blue-200">
+                - No parar de aprender
+              </p>
+              <p className="text-justify dark:bg-gray-800 dark:text-blue-200">
+                - Jugador aficionado de poker ♠️
+              </p>
+
+              <br />
             </div>
+            <Expertise githubStats={children} />
             <BasicTimeLine />
-            {/* <AuthorIntro></AuthorIntro> */}
-            {/* <Expertise></Expertise> */}
-            {/* <TimeLine></TimeLine> */}
           </div>
         </div>
-
-        <h2 className="mb-4 pt-3 text-gray-900  dark:text-white">{aboutMeJSX}</h2>
-
-        <TabsSection githubStats={children} frontMatter={frontMatter} />
 
         <h2 className="font-bold text-gray-900 dark:text-white">Gracias a:</h2>
         <h3 className="text-gray-900  dark:text-white">{thanksToJSX}</h3>
