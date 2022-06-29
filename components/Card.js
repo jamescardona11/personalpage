@@ -24,26 +24,25 @@ const Card = ({ title, description, href, github, tags, main }) => {
               <div className="mx-1">
                 {href ? (
                   <div className="my-2 flex cursor-pointer text-gray-600 dark:text-blue-100 ">
-                    <External className="h-6 w-6" />
-                    <a
+                    <CustomLink href={href}>
+                      <External className="h-6 w-6" />
+                    </CustomLink>
+
+                    {/* <a
                       className="font-semibold text-primary-500"
                       href={href}
                       target="_blank"
                       rel="noreferrer"
-                    ></a>
+                    ></a> */}
                   </div>
                 ) : null}
               </div>
               <div className="mx-1">
                 {github ? (
                   <div className="my-2 flex cursor-pointer text-gray-600 dark:text-blue-100 ">
-                    <Github className="h-6 w-6" />
-                    <a
-                      className="font-semibold text-primary-500"
-                      href={github}
-                      target="_blank"
-                      rel="noreferrer"
-                    ></a>
+                    <CustomLink href={href}>
+                      <Github className="h-6 w-6" />
+                    </CustomLink>
                   </div>
                 ) : null}
               </div>

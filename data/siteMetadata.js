@@ -23,7 +23,7 @@ const siteMetadata = {
   siteRepo: 'https://github.com/jamescardona11/my-personal-page',
   siteLogo: '/static/images/logo.png',
   image: '/static/images/avatar.png',
-  socialBanner: '/static/icons/glob.png',
+  socialBanner: '/static/images/twitter-card.png',
   email: 'jjcardonao@gmail.com',
   github: 'https://github.com/jamescardona11',
   twitter: 'https://twitter.com/Twitter',
