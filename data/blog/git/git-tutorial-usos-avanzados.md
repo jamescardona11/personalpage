@@ -44,7 +44,6 @@ fix: fix the animation for drawer
 [ ] is pending interact with ....
 
 TOK-1766 Jira
-
 ```
 
 Esto fue tomado de acá: https://udacity.github.io/git-styleguide/
@@ -126,8 +125,3 @@ Después de hacer este tutorial, estamos listos para iniciar el último y más r
 
 &nbsp;
 &nbsp;
-&nbsp;
-
-```
-
-```

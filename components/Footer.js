@@ -7,6 +7,7 @@ import CustomLink from './Link'
 import Github from '../public/static/icons/github.svg?inline'
 import Linkedin from '../public/static/icons/linkedin.svg?inline'
 import External from '../public/static/icons/external.svg?inline'
+import ThemeSwitch from './ThemeSwitch'
 
 export default function Footer() {
   return (
@@ -39,6 +40,7 @@ export default function Footer() {
           </div>
         )}
       </div>
+
       <div className="flex flex-col items-center pb-8">
         <nav className="mx-auto mt-4 flex w-full max-w-2xl flex-col justify-between gap-4 pb-8 sm:flex-row sm:gap-0 xl:max-w-3xl">
           <div className="flex flex-col space-y-4 md:items-start">
@@ -79,6 +81,7 @@ export default function Footer() {
           </div>
           <div className="flex flex-col space-y-4 md:items-start">
             <p className="text-sm font-bold">Misc</p>
+
             {/* <CustomLink
               className="text-sm hover:text-primary-600 dark:hover:text-primary-400"
               href={siteMetadata.siteRepo}
@@ -121,8 +124,13 @@ export default function Footer() {
             >
               LinkedIn
             </CustomLink>
-          </div>
+          </div>{' '}
+          {/* <div className="flex flex-col space-y-4 md:items-start">
+            <p className="text-sm font-bold">Theme</p>
+            
+          </div> */}
         </nav>
+
         <div className="flex w-full justify-between">
           <div className="w-full truncate">
             <div className="mb-2 flex space-x-2 text-sm text-gray-500 dark:text-gray-400">
@@ -136,6 +144,7 @@ export default function Footer() {
               </CustomLink>
             </div>
           </div>
+          <ThemeSwitch />
         </div>
       </div>
     </footer>

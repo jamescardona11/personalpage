@@ -67,7 +67,7 @@ const LayoutWrapper = ({ children }) => {
                 </CustomLink>
               ))}
             </div>
-            <ThemeSwitch />
+
             <MobileNav />
           </div>
         </header>

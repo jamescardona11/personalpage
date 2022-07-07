@@ -17,7 +17,7 @@ const siteMetadata = {
   topic1: '#fluter, #python, #nodejs, #web3, #solidity, #clojure <3 y #next.js.',
   topic2: 'Creando aplicaciones, emprendiendo y aprendiendo.',
   language: 'es-co',
-  theme: 'system', // system, dark or light
+  theme: 'light', // system, dark or light
 
   siteUrl: 'jamescardona11.com',
   siteRepo: 'https://github.com/jamescardona11/my-personal-page',
