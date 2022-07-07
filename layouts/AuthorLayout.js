@@ -13,9 +13,8 @@ import { PathType, SvgPathRounded } from '@/components/SvgPath'
 import { Expertise } from './components/Expertise'
 
 import Mail from '../public/static/icons/mail.svg?inline'
-import External from '../public/static/icons/external.svg?inline'
 import Glob from '../public/static/icons/glob.svg?inline'
-import CV from '../public/static/icons/external.svg?inline'
+import Resume from '../public/static/icons/resume.svg?inline'
 import Github from '../public/static/icons/github.svg?inline'
 import Linkedin from '../public/static/icons/linkedin.svg?inline'
 import Link from 'next/link'
@@ -58,14 +57,14 @@ export default function AuthorLayout({ children, frontMatter }) {
                   <Mail /> <a href="`mailto:${siteMetadata.email}`"> {siteMetadata.email}</a>
                 </div>
                 <div className="my-2 flex text-gray-600 dark:text-blue-100">
-                  <External className="h-6 w-6" />
+                  <Resume className="h-6 w-6" />
                   <a
                     className="font-semibold text-primary-500"
                     href={siteMetadata.cv}
                     target="_blank"
                     rel="noreferrer"
                   >
-                    Descargar CV
+                    Resume
                   </a>
                 </div>
                 <div className="my-2 flex text-gray-600 dark:text-blue-100">
@@ -78,13 +77,13 @@ export default function AuthorLayout({ children, frontMatter }) {
                   <Github className="h-6 w-6" />
 
                   <a href={siteMetadata.github} target="_blank" rel="noreferrer">
-                    @Github
+                    Github
                   </a>
                 </div>
                 <div className="my-2 flex text-gray-600 dark:text-blue-200">
                   <Linkedin className="h-6 w-6" />
                   <a href={siteMetadata.linkedin} target="_blank" rel="noreferrer">
-                    @LinkedIn
+                    LinkedIn
                   </a>
                 </div>
               </div>
@@ -145,8 +144,8 @@ export default function AuthorLayout({ children, frontMatter }) {
 
               <br />
             </div>
-            <Expertise githubStats={children} />
             <BasicTimeLine />
+            <Expertise githubStats={children} />
           </div>
         </div>
 

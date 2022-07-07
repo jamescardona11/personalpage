@@ -31,7 +31,7 @@ const LayoutWrapper = ({ children }) => {
   return (
     <SectionContainer>
       <div className="flex h-screen flex-col justify-between">
-        <header className="flex items-center justify-between py-10">
+        <header className="flex items-center justify-between py-5">
           <div>
             <CustomLink href="/" aria-label={siteMetadata.headerTitle}>
               <div className="text-primary-color dark:text-primary-color-dark flex items-center justify-between text-xl font-semibold">

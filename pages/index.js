@@ -31,7 +31,7 @@ export default function Home({ posts }) {
           </h1>
         </div>
         <ul className="divide-y divide-gray-200 dark:divide-gray-700">
-          {!newPosts.length && 'No posts found.'}
+          {!newPosts.length && 'Ningún posts encontrado.'}
           {newPosts.slice(0, MAX_DISPLAY).map((frontMatter) => (
             <PostCard key={frontMatter.title} frontMatter={frontMatter} />
           ))}

@@ -17,13 +17,13 @@ const Me = () => {
           </h1>
 
           <h2 className="mb-4 text-gray-900 dark:text-white">{roleToJSX}</h2>
-          <p className="text-gray-800 dark:text-gray-200">
+          <p className="w-4/5 text-gray-800 dark:text-gray-200">
             Bienvenidos a mi personal website, donde comparto un poco más acerca de mí. Tech
             Explorer | Apasionado por la tecnología, videojuegos y un entusiasta del mundo Cripto y
             NFTs.
           </p>
           <br />
-          <p className="text-gray-800 dark:text-gray-200">
+          <p className="w-2/3 text-gray-800 dark:text-gray-200">
             En mi tiempo libre{' '}
             <RoughNotation
               type="box"
@@ -41,11 +41,11 @@ const Me = () => {
               </span>
             </CustomLink>
             {''} y recientemente crear algunos post para este{' '}
-            <Link href="/blog">
+            <CustomLink href="/blog">
               <span className="cursor-pointer text-base font-medium leading-6 text-primary-500">
                 blog.
               </span>
-            </Link>
+            </CustomLink>
           </p>
 
           <p className="text-sm text-gray-700 dark:text-gray-400">{siteMetadata.topic2}</p>
