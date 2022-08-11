@@ -170,7 +170,7 @@ Usemos este recurso de [Figma Community][figma-ref].
 Este post trata de responsive así que no me voy a detener mucho en como desarrollar cada pieza de esta UI, te voy a dejar una referencia a Github donde puede descargarla.
 
 1. Puedes intentar construir el diseño de Figma por tu cuenta. (Sin responsive)
-2. Puedes usar este [repositorio][https://github.com/jamescardona11/my-blog-tutorials/tree/dashboard-web-responsive] la rama (**dashboard-web-responsive**), con el panel listo en web y saltar hasta la sección, **Empecemos el responsive**.
+2. Puedes usar este [repositorio](https://github.com/jamescardona11/my-blog-tutorials/tree/dashboard-web-responsive) la rama (**dashboard-web-responsive**), con el panel listo en web y saltar hasta la sección, **Empecemos el responsive**.
 
 <p align="center" width="100%">
   <img src="/static/images/flutter-web/ui_dashboard.png" width="450" />
