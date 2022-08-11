@@ -2,7 +2,7 @@
 title: Snippets para flutter
 date: 2022-8-3
 tags: ['misc', 'quick-post']
-draft: true
+draft: false
 summary: Hacer más rápido tu desarrollo por medio de los snippets
 ---
 
@@ -10,12 +10,14 @@ summary: Hacer más rápido tu desarrollo por medio de los snippets
 
 > Este es un post para una serie llamada **quick-post** la idea es poder hacer algunos post cortos con información sobre productividad, herramientas y diferentes cosas que me han servido para ser más productivo y con suerte esto le servirá a alguien y adicionalmente alguien me dejará recomendaciones para seguir mejorando.
 
-Los snippets son una una maravilla cuando son usados de forma correcta para mejorar nuestro rendimiento a la hora de crear código. Para cada lenguaje siempre hay muchos y diferentes personas que ofrecen sus snippets para que otras personas se ahorren el tiempo de configurar los propios.
+Los snippets son una maravilla cuando son usados de forma correcta para mejorar nuestro rendimiento a la hora de crear código. Para cada lenguaje siempre hay muchos y diferentes personas que ofrecen sus snippets para que otras personas se ahorren el tiempo de configurar los propios.
 
-En mi opinión es buena idea a medida que vamos creciendo como desarrolladores nos creemos nuestros propios snippets, en mi caso empece usando los snippets ofrecidos por la comunidad y fui adaptando poco a poco a mis necesidades, preferencias y las cosas que más uso.
+En mi opinión es buena idea que cuando aprendas más sobre un lenguaje o crecemos como desarrolladores tú puedas crear tus propios snippets, yo empece usando los snippets ofrecidos por la comunidad y fui adaptando poco a poco a mis necesidades, preferencias y las cosas que más uso.
 
-Mis snippets están en construcción, pero poco a poco ire creando o construyendo nuevos a medida que avance el tiempo.
+Mis snippets están en construcción, pero poco a poco iré creando o construyendo nuevos a medida que avance el tiempo.
 Esta es la lista de los snippets que uso, dividida en varias categorías.
+
+[Github Repo](https://github.com/jamescardona11/my-vscode-config)
 
 - Misc: Para imports y algunas funciones que uso mucho
 - Base Flutter: Acá están los widgets básicos de flutter
@@ -65,7 +67,7 @@ Esta es la lista de los snippets que uso, dividida en varias categorías.
 	// cappbar: Custom back appBar
 ```
 
-La lista es corta pero es lo que más uso y a medida que vaya teniendo más snippets los iré colocando acá.
+La lista es corta pero es lo que más uso y a medida que vaya teniendo más snippets los iré colocando en el repositorio.
 
 Gracias por llegar hasta acá Considera dar un like, compartir y nos vemos en un próximo post.
 
