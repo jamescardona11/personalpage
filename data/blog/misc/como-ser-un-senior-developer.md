@@ -94,23 +94,39 @@ Lo que diferencia un senior de otro nivel es el impacto que puede crear en un pr
 Esta es una lista, no necesariamente tienes que tener todas estás característica, entre más puede que seas un senior.
 
 - Experiencia demostrable
+
 - Conocen varias tecnologías
+
 - Desarrolla código de calidad
+
 - Prioriza y sabe cuando hacer o no hacer algo
+
 - Enfoca en soluciones de alto impacto y calidad
+
 - Detecta posibles fugas y/o problemas técnicos
 
 - Son personas autónomas y que no requieren supervisión
+
 - Identificaron sus áreas de oportunidad y se esfuerzan en mejorar
+
 - Tienen capacidad de liderazgo (Sabe delegar y supervisar)
+
 - Puede dirigir un proyecto/equipo
+
 - Hace de puente entre lo técnico y no-técnico
+
 - Saben escuchar
+
 - Sabe guiar o dar mentoring
+
 - Su impacto se ve en el equipo y/o empresa
+
 - Sabe trabajar en equipo
+
 - Integra los objetivos de la empresa con el proyecto
+
 - Encuentra espacios de feedback asertivo
+
 - Sabe medir su trabajo
 
 Casos particulares:
