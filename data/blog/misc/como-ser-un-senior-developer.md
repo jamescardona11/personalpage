@@ -1,6 +1,7 @@
 ---
 title: ¿Cómo ser un senior developer?
 date: 2022-6-15
+update: 2022-8-24
 tags: ['misc']
 draft: false
 summary: Ser un desarrollador de software es mucho más que solo escribir código.
@@ -8,7 +9,9 @@ summary: Ser un desarrollador de software es mucho más que solo escribir códig
 
 # ¿Cómo ser un senior developer?
 
-Ser un desarrollador de software es mucho más que solo escribir código. Generalmente, los desarrolladores de software son ubicados en tres rangos/niveles para medir sus capacidades, _junior_, _mid_ y _senior_, muchas veces llamado **seniority**.
+Ser un desarrollador de software es mucho más que solo escribir código. Ser un profesional involucra tener, diferentes habilidades que contribuyen a tu empresa, a otras personas y te permiten crecer día a día.
+
+Generalmente, los desarrolladores de software son ubicados en tres rangos/niveles para medir sus capacidades, _junior_, _mid_ y _senior_, muchas veces llamado **seniority**.
 Estos rangos son la base para las empresas, que varían según diferentes características, colocando sub-rangos(junior-2, senior-basic, etc), pero para este post estaré mencionando las habilidades para poder avanzar a senior y que puede hacerte destacar mucho más.
 
 <p align="center" width="100%">
@@ -133,6 +136,14 @@ Casos particulares:
 
 - Es un experto en un lenguaje o tecnología
 - Domina el negocio, procesos y metodologías de la empresa
+
+Adquirir estas habilidades te acerca más a ser una persona que puede ser considerada senior, cada habilidad va ayudar a que puedas aportar más a tu empresa, pero lo más importante es que cada habilidad sea algo que tu quieras obtener.
+
+#### Caso real, muy interesante:
+
+Después de escribir este post me encontré con un amigo y hablando con él, me enteré de que en menos de 8 meses de empezar a trabajar como desarrollador en la empresa donde estaba trabajando subió a una posición de Senior, conociéndolo, no fue una posición donde se quedó sentado y no estaba haciendo nada más. Realmente este es un caso que puede ponerte a pensar o reflexionar sobre otras habilidades obtenidas a lo largo de tu vida.
+
+¿Cómo lo logro?, el momento correcto y las habilidades necesarias para ser una persona de **alto impacto** para la empresa, cuando llego fue diligente, humilde y con capacidad para aprender, luego se dedicó a ser un líder positivo para su grupo, se mostró como una persona valiosa para el proyecto y la empresa, usando sus conocimientos en negocios, web3 y otras cosas paso a ser Senior. No por su nivel técnico o por el tiempo en la empresa. Lo logro por ser una persona importante para la organización.
 
 ### Conclusiones
 
