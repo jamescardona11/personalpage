@@ -30,6 +30,8 @@ const siteMetadata = {
   instagram: 'https://www.instagram.com/jamescardona11/',
   cv: 'https://www.dropbox.com/s/69l2vuo9ebjtly2/profile_us.pdf?dl=0',
   notion: 'https://jamescardona11.notion.site/Learning-Path-f43a762b328043269aeb4d6b6d2e31de',
+  exa: 'exa.j11.io',
+  deew: 'deew.j11.io',
   youtube: 'https://www.youtube.com/channel/UCoDHYabD2zNtMn17x2wu50Q',
   linkedin: 'https://www.linkedin.com/in/jamescardona11',
   locale: 'es-co',

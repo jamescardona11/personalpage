@@ -100,6 +100,19 @@ export default function Footer() {
             >
               Notion
             </CustomLink>
+
+            <CustomLink
+              className="text-sm hover:text-primary-600 dark:hover:text-primary-400"
+              href={siteMetadata.deew}
+            >
+              Deew
+            </CustomLink>
+            <CustomLink
+              className="text-sm hover:text-primary-600 dark:hover:text-primary-400"
+              href={siteMetadata.exa}
+            >
+              Exa
+            </CustomLink>
           </div>
           <div className="flex flex-col space-y-4 md:items-start">
             <p className="text-sm font-bold">Social</p>

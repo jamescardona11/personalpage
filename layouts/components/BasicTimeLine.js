@@ -5,7 +5,7 @@ export const BasicTimeLine = () => {
   return (
     <>
       <h3 className="mb-8 mt-8 text-gray-900  dark:text-white">
-        Si quieres ver todo el timeline visita mi LinkedIn
+        Si quieres ver todo el historial profesional visita mi LinkedIn
       </h3>
       <ol className="relative ml-4 border-l border-gray-200 dark:border-gray-700">
         <li className="mb-10 ml-6">
@@ -28,28 +28,28 @@ export const BasicTimeLine = () => {
         <li className="mb-10 ml-6">
           <SvgSpan />
           <h3 className="mb-1 text-lg font-semibold text-gray-900 dark:text-white">
-            Web3 Engineer - EXA
+            Web3 Engineer - Deew
           </h3>
           <time className="mb-2 block text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
-            Entre Junio 2021 - Junio 2022
+            Entre Mayo 2019 - Dec 2021
           </time>
           <p className="text-base font-normal text-gray-500 dark:text-gray-400">
-            En conjunto de varios amigos decidimos emprender en el mundo de los NFT, lanzando
-            colecciones. Adicional comprando y vendiendo diferentes NFT's en etapas tempranas.
+            Mi rol principalmente a encontrar soluciones a problemas para empresas en la nueva ola
+            de web3.
           </p>
         </li>
         <li className="mb-10 ml-6">
           <SvgSpan />
           <h3 className="mb-1 text-lg font-semibold text-gray-900 dark:text-white">
-            Tech Lead - GeekDevelopers
+            Tech Lead/ Software Developer - GeekDevelopers
           </h3>
           <time className="mb-2 block text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
-            Entre Agosto 2016 - Mayo 2018
+            Entre Jun 2014 - Jul 2018
           </time>
           <p className="text-base font-normal text-gray-500 dark:text-gray-400">
-            Tuve la oportunidad de aprender diferentes cosas como desarrollador y como líder de
-            equipo, fue una primera etapa llena de diferentes retos y errores. Pero que me ayudaron
-            a crecer como persona.
+            Mi rol se convirtió en Tech Lead. En este rol mi función principal era dirigir la
+            operativa de la empresa y asegurar el delivery de los diferentes requisitos. Estuve
+            desarrollando, como Android Developer y Backend Developer
           </p>
         </li>
       </ol>
