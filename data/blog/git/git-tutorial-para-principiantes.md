@@ -1,7 +1,7 @@
 ---
 title: Git para todos. Parte 1 - Lo básico
 date: 2022-5-15
-tags: ['git', 'git-serie', 'basic']
+tags: ['git', 'git-serie', 'basic', 'es']
 draft: false
 summary: Git tiene la versatilidad para ayudarnos a trabajar de forma distribuida. Sumerge en esté mundo y descubre todo su potencial.
 ---

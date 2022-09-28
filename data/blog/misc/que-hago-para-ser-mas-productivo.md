@@ -1,7 +1,7 @@
 ---
 title: ¿Qué hago para ser más productivo?
 date: 2022-7-20
-tags: ['misc', 'quick-post']
+tags: ['misc', 'quick-post', 'es']
 draft: false
 summary:
 ---

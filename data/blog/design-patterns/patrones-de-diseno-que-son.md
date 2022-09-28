@@ -1,7 +1,7 @@
 ---
 title: Patrones de diseño - 1
 date: 2022-4-25
-tags: ['basic', 'design-patterns']
+tags: ['basic', 'design-patterns', 'es']
 draft: false
 summary: Los patrones de diseño son la receta para crear aplicaciones escalables, mantenibles y con calidad.
 ---

@@ -1,7 +1,7 @@
 ---
 title: Snippets para flutter
 date: 2022-8-3
-tags: ['misc', 'quick-post']
+tags: ['misc', 'quick-post', 'es']
 draft: false
 summary: Hacer más rápido tu desarrollo por medio de los snippets
 ---

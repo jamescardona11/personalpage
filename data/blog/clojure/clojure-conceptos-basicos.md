@@ -1,7 +1,7 @@
 ---
 title: Clojure - ¿Cómo iniciar con lo básico?
 date: 2022-5-4
-tags: ['basic', 'clojure']
+tags: ['basic', 'clojure', 'es']
 draft: false
 summary: Un lenguaje de propósito general de tipo funcional. Clojure expone toda la potencia de los lenguajes funcionales y lo pone a disposición de una forma fácil.
 ---

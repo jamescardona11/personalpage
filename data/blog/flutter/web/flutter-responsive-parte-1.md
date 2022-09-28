@@ -1,7 +1,7 @@
 ---
 title: Flutter responsive - Parte 1
 date: 2022-8-11
-tags: ['flutter', 'flutter-web', 'responsive-serie']
+tags: ['flutter', 'flutter-web', 'responsive-serie', 'es']
 draft: false
 summary: Hacer aplicaciones en flutter web es muy fácil con todo lo que aprendemos desarrollando una aplicación un móvil, una de las cosas que no es una preocupación es el responsive .
 ---

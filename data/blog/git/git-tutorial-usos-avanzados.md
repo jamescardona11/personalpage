@@ -1,7 +1,7 @@
 ---
 title: Git para todos. Parte 3 - Uso avanzado
 date: 2022-5-21
-tags: ['git', 'git-serie', 'basic']
+tags: ['git', 'git-serie', 'intermediate', 'es']
 draft: false
 summary: Vamos a ver algunas situaciones particulares y como las podemos gestionar con git
 ---

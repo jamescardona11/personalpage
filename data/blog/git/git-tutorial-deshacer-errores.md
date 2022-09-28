@@ -1,7 +1,7 @@
 ---
 title: Git para todos. Parte 4 - Deshacer errores
 date: 2022-5-25
-tags: ['git', 'git-serie', 'basic']
+tags: ['git', 'git-serie', 'basic', 'es']
 draft: false
 summary: Git tiene muchas combinaciones para deshacer los errores y evitar dolores de cabeza.
 ---

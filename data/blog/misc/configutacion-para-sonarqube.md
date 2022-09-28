@@ -1,7 +1,7 @@
 ---
 title: Flutter, Análisis estático de código con SonarQube.
 date: 2021-7-14
-tags: ['flutter', 'flutter-tools']
+tags: ['flutter', 'flutter-tools', 'es']
 draft: false
 summary: Este artículo te dará una breve introducción a una herramienta de análisis para tu código. Trataremos de responder ¿Para qué se usa?, ¿Cómo instalarlo? y mucho más.
 canonicalUrl: https://dev.to/jamescardona11/flutter-code-static-analysis-with-sonarqube-3b39

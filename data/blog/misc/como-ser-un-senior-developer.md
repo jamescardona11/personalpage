@@ -2,7 +2,7 @@
 title: ¿Cómo ser un senior developer?
 date: 2022-6-15
 update: 2022-8-24
-tags: ['misc']
+tags: ['misc', 'es']
 draft: false
 summary: Ser un desarrollador de software es mucho más que solo escribir código.
 ---
